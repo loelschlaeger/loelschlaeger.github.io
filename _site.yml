@@ -18,3 +18,7 @@ navbar:
       href: https://github.com/loelschlaeger
     - icon: fa-twitter
       href: https://twitter.com/l_oelschlaeger
+output:
+  html_document:
+    highlight: textmate
+    css: styles.css
