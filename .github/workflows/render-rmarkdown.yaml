@@ -1,13 +1,12 @@
-# Workflow derived from https://github.com/r-lib/actions/tree/master/examples
-# Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
   push:
     paths: ['**.Rmd']
 
-name: render-rmarkdown
+name: render-website
 
 jobs:
-  render-rmarkdown:
+  render-website:
+    name: Render Website
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -26,7 +25,7 @@ jobs:
       - name: Install rmarkdown
         run: Rscript -e 'install.packages("rmarkdown")'
       
-      - name: Render Rmarkdown files
+      - name: Render rmarkdown files
         run: |
           RMD_PATH=($(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '[.]Rmd$'))
           Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f)' ${RMD_PATH[*]}

@@ -2,6 +2,8 @@ on:
   push:
     paths:
       - 'cv/*'
+      
+name: render-cv
 
 jobs:
   render:
@@ -23,7 +25,7 @@ jobs:
       - name: Render CV to cv folder
         run: Rscript -e 'rmarkdown::render("cv/oelschlaeger_cv.Rmd")'
         
-      - name: Render CV to static folder
+      - name: Render CV to files folder
         run: Rscript -e 'rmarkdown::render("cv/oelschlaeger_cv.Rmd", output_dir = "files/")'
         
       - name: Commit results
