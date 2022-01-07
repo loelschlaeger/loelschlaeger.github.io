@@ -7,8 +7,10 @@ pagetitle: "Lennart Oelschl&auml;ger"
 
 ## Hello, I'm Lennart!
 
-I like to extract knowledge from data and live my passion as a Research Associate in the Econometrics Group at Bielefeld University.
+I like to extract knowledge from data and live my passion as a Research Associate in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University.
 
 In my spare time you can find me above the clouds, on the tennis court, or in front of a chess board.
+
+I use this website to present my [research](research.html), list my [talks](talks.html), share [tutorials](tutorials.html) and link to [code snippets](https://gist.github.com/loelschlaeger).
 
 You can download my CV [here](cv/oelschlaeger.pdf) und find a list of my publications [here](https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ).
