@@ -14,8 +14,6 @@ navbar:
   right:
     - icon: fa-envelope
       href: mailto:oelschlaeger.lennart@gmail.com
-    - icon: ai-google-scholar ai-lg
-      href: https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ
     - icon: fa-github
       href: https://github.com/loelschlaeger
     - icon: fa-twitter
