@@ -1,4 +1,4 @@
 ---
-title: "Research"
+title: " "
 pagetitle: "Lennart Oelschl&auml;ger"
 ---

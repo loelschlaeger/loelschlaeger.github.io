@@ -1,4 +1,4 @@
 ---
-title: "Talks"
+title: " "
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
