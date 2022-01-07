@@ -62,7 +62,7 @@ B.Sc. in Mathematics, *Bielefeld University* \hfill 2013 - 2017
 
 # Talks
 
-Klassifizierung von PrC$ferenzen: Eine Anwendung mit dem R Paket RprobitB, *27. AKA-Workshop at Kloster Irsee*, 18.11.2021
+Klassifizierung von Pr&auml;ferenzen: Eine Anwendung mit dem R Paket RprobitB, *27. AKA-Workshop at Kloster Irsee*, 18.11.2021
 
 On the initialization of multinomial probit models, *9th Young Researcher Workshop at Bielefeld University*, 16.07.2021
 

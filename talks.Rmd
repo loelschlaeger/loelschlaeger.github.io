@@ -2,3 +2,11 @@
 title: " "
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
+
+Klassifizierung von Pr&auml;ferenzen: Eine Anwendung mit dem R Paket RprobitB, *27. AKA-Workshop at Kloster Irsee*, 18.11.2021
+
+On the initialization of multinomial probit models, *9th Young Researcher Workshop at Bielefeld University*, 16.07.2021
+
+Approximating mixing distributions in probit models via a Bayesian approach, *Centre for Statistics at Bielefeld University*, 24.11.2020
+
+Detecting bearish and bullish markets in financial time series using hierarchical hidden Markov models, *Doctoral Day at Bielefeld University*, 02.10.2020
