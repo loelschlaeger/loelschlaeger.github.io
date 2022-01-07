@@ -88,5 +88,5 @@ Chess: I play chess since I am 5 years old.
 
 Tennis: Only outside and in good weather.
 
-Languages: English, French, R, LaTeX, C++, Matlab, Java.
+Languages: English, French, R, LaTeX, C++, Matlab, Python, Java.
 
