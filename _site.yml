@@ -6,16 +6,16 @@ navbar:
   left:
     - text: "Research"
       href: research.html
-    - text: "Speaking"
+    - text: "Talks"
       href: talks.html
     - text: "Tutorials"
-      href: teaching.html
+      href: tutorials.html
     - text: "Snippets"
-      href: software.html
+      href: https://gist.github.com/loelschlaeger
   right:
     - icon: fa-envelope
-      href: index.html
+      href: mailto:oelschlaeger.lennart@gmail.com
     - icon: fa-github
-      href: index.html
+      href: https://github.com/loelschlaeger
     - icon: fa-twitter
-      href: index.html
+      href: https://twitter.com/l_oelschlaeger
