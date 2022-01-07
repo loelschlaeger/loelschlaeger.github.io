@@ -3,8 +3,8 @@ title: " "
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
-<img src="images/lennart_oelschlaeger.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left">
+<img src="cv/oelschlaeger.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left">
 
 Hello, World!
 
-You can download my CV [here](files/oelschlaeger_cv.pdf).
+You can download my CV [here](cv/oelschlaeger.pdf).

@@ -22,7 +22,7 @@ jobs:
         run: Rscript -e 'install.packages("rmarkdown")'
         
       - name: Render CV to cv folder
-        run: Rscript -e 'rmarkdown::render("cv/oelschlaeger_cv.Rmd")'
+        run: Rscript -e 'rmarkdown::render("cv/oelschlaeger.Rmd")'
 
       - name: Commit results
         run: |
