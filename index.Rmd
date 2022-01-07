@@ -3,7 +3,13 @@ title: " "
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
-<img src="cv/oelschlaeger.jpg" style="width:25%; border:5px solid; margin-right: 20px" align="left">
+<style>
+img {
+  border-radius: 50%;
+}
+</style>
+
+<img src="cv/oelschlaeger.jpg" alt="Lennart Oelschl&auml;ger" style="width:25%; border:1px solid; margin-right: 20px" align="left">
 
 Hello, World!
 
