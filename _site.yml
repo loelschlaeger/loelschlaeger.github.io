@@ -1,9 +1,20 @@
 name: "my-website"
 output_dir: docs
 navbar:
-  title: "My Website"
+  title: "Lennart Oelschl&auml;ger"
   left:
-    - text: "Home"
+    - text: "Research"
+      href: research.html
+    - text: "Speaking"
+      href: talks.html
+    - text: "Tutorials"
+      href: teaching.html
+    - text: "Snippets"
+      href: software.html
+  right:
+    - icon: fa-envelope
       href: index.html
-    - text: "About"
-      href: about.html
+    - icon: fa-github
+      href: index.html
+    - icon: fa-twitter
+      href: index.html
