@@ -5,12 +5,10 @@ pagetitle: "Lennart Oelschl&auml;ger"
 
 <img src="cv/oelschlaeger.jpg" alt="Lennart Oelschl&auml;ger" style="width:25%; border:1px solid; margin-right: 20px" align="left">
 
-Hello, I'm Lennart!
+## Hello, I'm Lennart!
 
 I like to extract knowledge from data and live my passion as a Research Associate in the Econometrics Group at Bielefeld University.
 
 You can download my CV [here](cv/oelschlaeger.pdf).
 
 In my spare time you can find me above the clouds, on the tennis court, or in front of a chess board.
-
-> Identify the essential. Eliminate the rest. 
