@@ -1,4 +1,4 @@
-name: "my-website"
+name: "Lennart Oelschl&auml;ger"
 output_dir: docs
 exclude: ["cv"]
 navbar:
