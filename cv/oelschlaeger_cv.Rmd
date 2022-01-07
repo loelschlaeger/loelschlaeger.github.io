@@ -26,8 +26,6 @@ urlcolor: blue
 lang: en-US
 ---
 
-hi
-
 # Employment
 
 Research Associate, *Bielefeld University* \hfill 2019 - current
