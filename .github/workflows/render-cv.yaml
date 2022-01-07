@@ -24,8 +24,8 @@ jobs:
       - name: Render CV to cv folder
         run: Rscript -e 'rmarkdown::render("cv/oelschlaeger_cv.Rmd")'
         
-      - name: Render CV to files folder
-        run: Rscript -e 'rmarkdown::render("cv/oelschlaeger_cv.Rmd", output_dir = "files/")'
+      - name: Render CV to 'docs/files' folder
+        run: Rscript -e 'rmarkdown::render("cv/oelschlaeger_cv.Rmd", output_dir = "docs/files/")'
         
       - name: Commit results
         run: |
