@@ -5,7 +5,7 @@ output:
     template: template.tex
 geometry: left=2cm, right=2cm, top=2cm, bottom=2cm, includeheadfoot
 
-author: Lennart Oelschläger
+author: Lennart Oelschl&auml;ger
 jobtitle: "Research Associate and PhD Student"
 address: "Bielefeld University, Germany"
 birthday: "16.11.1994"
@@ -42,11 +42,11 @@ B.Sc. in Mathematics, *Bielefeld University* \hfill 2013 - 2017
 
 ## Journal Articles
 
-*Detecting bearish and bullish markets in financial time series using hierarchical hidden Markov models*, Oelschläger and Adam (2021), Statistical Modelling
+*Detecting bearish and bullish markets in financial time series using hierarchical hidden Markov models*, Oelschl&auml;ger and Adam (2021), Statistical Modelling
 
 ## Conference Papers
 
-*Bayes Estimation of Latent Class Mixed Multinomial Probit Models*, Oelschläger and Bauer (2021), TRB Annual Meeting
+*Bayes Estimation of Latent Class Mixed Multinomial Probit Models*, Oelschl&auml;ger and Bauer (2021), TRB Annual Meeting
 
 ## Software
 
@@ -58,11 +58,11 @@ B.Sc. in Mathematics, *Bielefeld University* \hfill 2013 - 2017
 
 [vntrs](https://loelschlaeger.github.io/vntrs/): Variable neighborhood trust region search.
 
-[personfiles](https://loelschlaeger.github.io/personfiles/): Saving notes about persons in your life.
+[ino](https://loelschlaeger.github.io/ino/): Initialization of numerical optimization.
 
 # Talks
 
-Klassifizierung von Präferenzen: Eine Anwendung mit dem R Paket RprobitB, *27. AKA-Workshop at Kloster Irsee*, 18.11.2021
+Klassifizierung von PrC$ferenzen: Eine Anwendung mit dem R Paket RprobitB, *27. AKA-Workshop at Kloster Irsee*, 18.11.2021
 
 On the initialization of multinomial probit models, *9th Young Researcher Workshop at Bielefeld University*, 16.07.2021
 
