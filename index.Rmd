@@ -1,5 +1,6 @@
 ---
-title: "My Website"
+title: ""
+pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
 Hello, Website!
