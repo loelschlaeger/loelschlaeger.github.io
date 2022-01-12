@@ -2,3 +2,9 @@
 title: " "
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
+
+1. Probit models for discrete choice
+
+2. Numerical optimization
+
+3. Hidden Markov models for finance
