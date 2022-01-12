@@ -9,7 +9,7 @@ navbar:
       href: talks.html
     - text: "Tutorials"
       href: tutorials.html
-    - text: "Snippets"
+    - text: "Code snippets"
       href: https://gist.github.com/loelschlaeger
   right:
     - icon: fa-envelope
