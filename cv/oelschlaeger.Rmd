@@ -15,7 +15,7 @@ email: oelschlaeger.lennart@gmail.com
 github: loelschlaeger
 twitter: l_oelschlaeger
 phone: "+49 177 60 39 520"
-web: oilbat.de
+web: loelschlaeger.de
 updated: yes
 
 fontfamily: mathpazo
