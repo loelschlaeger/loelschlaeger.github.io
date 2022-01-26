@@ -3,8 +3,8 @@ title: " "
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
-1. Chess
-
-2. Aviation
-
-3. Statistic videos
+| Topic            | Description   | Link  |
+| :-------------   | :------------- | :----- |
+| Chess            |  | [Go to the studies](https://lichess.org/study/by/loelschlaeger) |
+| Aviation         |       | [Read the book](https://loelschlaeger.de/aviation_explained) |
+| Statistic videos |     | [Watch some videos](https://www.youtube.com/channel/UCYWds7vnV0f5ZXUxxt0C_AA)|

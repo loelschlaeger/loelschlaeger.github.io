@@ -6,9 +6,11 @@ navbar:
     - icon: fa-search
       text: "Research"
       href: research.html
-    - text: "Talks"
+    - icon: fa-microphone
+      text: "Talks"
       href: talks.html
-    - text: "Tutorials"
+    - icon: fa-book
+      text: "Tutorials"
       href: tutorials.html
   right:
     - icon: fa-envelope
@@ -17,8 +19,11 @@ navbar:
     - icon: fa-github
       text: "GitHub"
       href: https://github.com/loelschlaeger
+    - icon: fa-code
+      text: "Code snippets"
+      href: https://gist.github.com/loelschlaeger
     - icon: fa-twitter
-      href: "Twitter"
+      text: "Twitter"
       href: https://twitter.com/l_oelschlaeger
 output:
   html_document:

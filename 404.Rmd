@@ -4,3 +4,7 @@ pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
 404'd.
+
+```{r}
+0 / 0
+```
