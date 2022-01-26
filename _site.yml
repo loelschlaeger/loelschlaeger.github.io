@@ -3,20 +3,22 @@ output_dir: "."
 navbar:
   title: "Lennart Oelschl&auml;ger"
   left:
-    - text: "Research"
+    - icon: fa-search
+      text: "Research"
       href: research.html
     - text: "Talks"
       href: talks.html
     - text: "Tutorials"
       href: tutorials.html
-    - text: "Code snippets"
-      href: https://gist.github.com/loelschlaeger
   right:
     - icon: fa-envelope
+      text: "Mail"
       href: mailto:oelschlaeger.lennart@gmail.com
     - icon: fa-github
+      text: "GitHub"
       href: https://github.com/loelschlaeger
     - icon: fa-twitter
+      href: "Twitter"
       href: https://twitter.com/l_oelschlaeger
 output:
   html_document:
