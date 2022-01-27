@@ -9,6 +9,16 @@ output:
 
 ## Discrete choice
 
+### The `RprobitB` package
+
 ## Numerical optimization
 
+### The `ino` project
+
+### Alternating optimization
+
+### VNTRS
+
 ## Hidden Markov models
+
+### Financial time series
