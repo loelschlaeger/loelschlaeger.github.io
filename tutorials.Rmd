@@ -3,8 +3,8 @@ title: " "
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
-| Topic            | Description   | Link  |
-| :-------------   | :------------- | :----- |
-| Chess            |  | [Go to the studies](https://lichess.org/study/by/loelschlaeger) |
-| Aviation         |       | [Read the book](https://loelschlaeger.de/aviation_explained) |
-| Statistic videos |     | [Watch some videos](https://www.youtube.com/channel/UCYWds7vnV0f5ZXUxxt0C_AA)|
+| Topic  | Description    | Link   |
+| :----- | :------------- | :----- |
+| Chess            | I play chess since I am 5 years old. Being grown up a bit, I currently like to collect interesting chess opening ideas in studies and try them out in online and over-the-board games. | [Go to the studies](https://lichess.org/study/by/loelschlaeger) |
+| Aviation         | In 2019 I fulfilled my childhood-dream and learned to fly. One year later, I owned my private pilot license. Right now I am studying for my instrument rating and collect my aviation knowledge in book format. | [Read the book](https://loelschlaeger.de/aviation_explained) |
+| Statistic videos | In my fifth university semester, I started giving statistic tutorials and really enjoyed it. Somehow, I came up with the idea to upload videos of me talking about statistics on YouTube. | [Watch some videos](https://www.youtube.com/channel/UCYWds7vnV0f5ZXUxxt0C_AA)|
