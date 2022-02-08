@@ -32,5 +32,5 @@ jobs:
           git config --local user.email "oelschlaeger.lennart@gmail.com"
           git config --local user.name "Lennart Oelschlaeger"
           git add .
-          git commit -m 'Rendered site' || echo "No changes to commit"
+          git commit -m 'Rendered site :construction_worker:' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
