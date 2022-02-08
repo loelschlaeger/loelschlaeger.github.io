@@ -19,9 +19,6 @@ navbar:
     - icon: fa-github
       text: "GitHub"
       href: https://github.com/loelschlaeger
-    - icon: fa-code
-      text: "Code snippets"
-      href: https://gist.github.com/loelschlaeger
     - icon: fa-twitter
       text: "Twitter"
       href: https://twitter.com/l_oelschlaeger
