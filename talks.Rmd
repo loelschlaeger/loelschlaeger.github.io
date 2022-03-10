@@ -3,6 +3,8 @@ title: " "
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
+- [Bayes Estimation of Probit Choice Models with {RprobitB}](files/slides/yrw_11_03_2022/slides.html), *10th Young Researcher Workshop at Bielefeld University*, 10.03.2022
+
 - [Klassifizierung von Pr&auml;ferenzen: Eine Anwendung mit dem R Paket RprobitB](files/slides/aka_18_11_2021.pdf), *27. AKA-Workshop at Kloster Irsee*, 18.11.2021
 
 - [On the initialization of multinomial probit models](files/slides/yrw_16_07_2021.pdf), *9th Young Researcher Workshop at Bielefeld University*, 16.07.2021
