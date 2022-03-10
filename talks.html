@@ -13,7 +13,6 @@
 
 <title>Lennart Oelschläger</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -59,6 +58,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
 
@@ -83,6 +83,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -235,7 +238,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -302,12 +305,13 @@ $(document).ready(function () {
 
 
 <ul>
+<li><p><a href="files/slides/yrw_11_03_2022/slides.html">Bayes Estimation of Probit Choice Models with {RprobitB}</a>, <em>10th Young Researcher Workshop at Bielefeld University</em>, 10.03.2022</p></li>
 <li><p><a href="files/slides/aka_18_11_2021.pdf">Klassifizierung von Präferenzen: Eine Anwendung mit dem R Paket RprobitB</a>, <em>27. AKA-Workshop at Kloster Irsee</em>, 18.11.2021</p></li>
 <li><p><a href="files/slides/yrw_16_07_2021.pdf">On the initialization of multinomial probit models</a>, <em>9th Young Researcher Workshop at Bielefeld University</em>, 16.07.2021</p></li>
 <li><p><a href="files/slides/zest_24_11_2020.pdf">Approximating mixing distributions in probit models via a Bayesian approach</a>, <em>Centre for Statistics at Bielefeld University</em>, 24.11.2020</p></li>
 <li><p><a href="files/slides/doctoral_day_02_10_2020.pdf">Detecting bearish and bullish markets in financial time series using hierarchical hidden Markov models</a>, <em>Doctoral Day at Bielefeld University</em>, 02.10.2020</p></li>
 </ul>
-<p><em>Last update: 2022-02-15</em></p>
+<p><em>Last update: 2022-03-10</em></p>
 
 
 
