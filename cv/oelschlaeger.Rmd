@@ -52,7 +52,7 @@ B.Sc. in Mathematics, *Bielefeld University* \hfill 2013 - 2017
 
 [fHMM](https://loelschlaeger.github.io/fHMM/): Fitting (hierarchical) hidden Markov models to financial data.
 
-[RprobitB](https://loelschlaeger.github.io/RprobitB/): Bayesian estimation of (latent class mixed) multinomial probit models.
+[RprobitB](https://loelschlaeger.github.io/RprobitB/): Bayesian estimation of probit models.
 
 [ao](https://loelschlaeger.github.io/ao/): Alternating optimization of (high-dimensional) functions.
 
@@ -62,15 +62,21 @@ B.Sc. in Mathematics, *Bielefeld University* \hfill 2013 - 2017
 
 # Talks
 
-Klassifizierung von Präferenzen: Eine Anwendung mit dem R Paket RprobitB, *27. AKA-Workshop at Kloster Irsee*, 18.11.2021
+Bayes estimation of probit choice models with {RprobitB}, *10th Young Researcher Workshop at Bielefeld University*, 10.03.2022
+
+Klassifizierung von PrC$ferenzen: Eine Anwendung mit dem R Paket RprobitB, *27. AKA-Workshop at Kloster Irsee*, 18.11.2021
 
 On the initialization of multinomial probit models, *9th Young Researcher Workshop at Bielefeld University*, 16.07.2021
+
+Bayes estimation of latent class mixed multinomial probit models, *Poster Session at the 100th Transportation Research Board Annual Meeting*, 28.01.2021
 
 Approximating mixing distributions in probit models via a Bayesian approach, *Centre for Statistics at Bielefeld University*, 24.11.2020
 
 Detecting bearish and bullish markets in financial time series using hierarchical hidden Markov models, *Doctoral Day at Bielefeld University*, 02.10.2020
 
 # Teaching
+
+R course, *Bielefeld University* \hfill WT 21/22
 
 Reading course for statistical science, *Bielefeld University* \hfill WT 21/22
 

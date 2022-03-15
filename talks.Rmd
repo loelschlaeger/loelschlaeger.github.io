@@ -9,7 +9,7 @@ pagetitle: "Lennart Oelschl&auml;ger"
 
 - [On the initialization of multinomial probit models](files/slides/yrw_16_07_2021.pdf), *9th Young Researcher Workshop at Bielefeld University*, 16.07.2021
 
-- [Bayes estimation of latent class mixed multinomial probit models](files/slides/trb_28_01_2021.pdf), *Poster Session at the 100th Transportation Research Board Annual Meeting* , 28.01.2021
+- [Bayes estimation of latent class mixed multinomial probit models](files/slides/trb_28_01_2021.pdf), *Poster Session at the 100th Transportation Research Board Annual Meeting*, 28.01.2021
 
 - [Approximating mixing distributions in probit models via a Bayesian approach](files/slides/zest_24_11_2020.pdf), *Centre for Statistics at Bielefeld University*, 24.11.2020
 
