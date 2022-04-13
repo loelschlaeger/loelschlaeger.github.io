@@ -36,6 +36,6 @@ I like to extract knowledge from data and live my passion as a Research Associat
 
 In my spare time you can find me above the clouds, on the tennis court, or in front of a chess board.
 
-I use this website to present my [research](research.html), list my [talks](talks.html), and share some [tutorials](tutorials.html).
+I use this website to present my [research](research.html) and list my [talks](talks.html).
 
 You can download my CV [here](cv/oelschlaeger.pdf) and find a list of my publications [here](https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ).
