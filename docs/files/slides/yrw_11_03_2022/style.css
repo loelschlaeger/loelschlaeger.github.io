@@ -1,0 +1,31 @@
+h1.title {
+  font-size: 70px;
+  line-height: 90px;
+}
+
+h1.subtitle {
+  font-size: 40px;
+  line-height: 90px;
+}
+
+h2.author {
+  font-weight: normal;
+  line-height: 90px;
+}
+
+.reveal p {
+    text-align: left;
+    font-size: 0.6em;
+  }
+.reveal ul {
+  display: block;
+}
+.reveal ol {
+  display: block;
+}
+
+.reveal section img {
+  background:none;
+  border:none;
+  box-shadow:none;
+}
