@@ -26,3 +26,5 @@ output:
   html_document:
     highlight: textmate
     css: style.css
+    includes:
+      in_header: header.html

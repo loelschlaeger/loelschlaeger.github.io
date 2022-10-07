@@ -9,10 +9,10 @@ pagetitle: "Lennart Oelschl&auml;ger"
   <h2>Hi, I'm Lennart!</h2>
 </div>
 
-I like to extract knowledge from data and live my passion as a Research Associate in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University.
+I'm a PhD student and Research Associate at Bielefeld University's [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/).
 
-In my spare time you can find me above the clouds, on the tennis court, or in front of a chess board.
+In my spare time, you can find me above the clouds, on the tennis court, or in front of a chess board.
 
-I use this website to present my [research](research.html) and list my [talks](talks.html).
+I use this website to share my [research](research.html) and list my [talks](talks.html) and [projects](projects.html).
 
 You can download my CV [here](cv/oelschlaeger.pdf) and find a list of my publications [here](https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ).

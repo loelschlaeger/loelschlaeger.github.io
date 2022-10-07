@@ -1,5 +1,5 @@
 ---
-title: " "
+title: "My talks"
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
