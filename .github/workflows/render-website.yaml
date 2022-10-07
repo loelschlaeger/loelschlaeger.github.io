@@ -1,6 +1,4 @@
-on:
-  push:
-    paths: ['**.Rmd']
+on: push
 
 name: render-website
 

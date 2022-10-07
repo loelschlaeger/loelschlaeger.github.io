@@ -1,5 +1,5 @@
 name: "oelschlaeger"
-output_dir: "."
+output_dir: "docs"
 navbar:
   title: "Lennart Oelschl&auml;ger"
   left:
@@ -9,6 +9,9 @@ navbar:
     - icon: fa-microphone
       text: "Talks"
       href: talks.html
+    - icon: fa-bookmark
+      text: "Projects"
+      href: projects.html
   right:
     - icon: fa-envelope
       text: "Mail"
@@ -22,4 +25,4 @@ navbar:
 output:
   html_document:
     highlight: textmate
-    css: styles.css
+    css: style.css
