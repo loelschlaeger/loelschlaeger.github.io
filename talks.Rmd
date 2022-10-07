@@ -3,7 +3,7 @@ title: " "
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
-- [Our contact points with big data in empirical methods](files/slides/doctoral_day_07_10_2022.pdf), *Doctoral Day at ZiF Bielefeld*, 07.10.2022 (together with Carlina Feldmann and Jonas Bauer)
+- [Our contact points with big data in empirical methods](files/slides/doctoral_day_07_10_2022.pdf), *Doctoral Day at ZiF Bielefeld*, 07.10.2022 (with Carlina Feldmann and Jonas Bauer)
 
 - [Bayes estimation of probit choice models with {RprobitB}](files/slides/yrw_11_03_2022/slides.html), *10th Young Researcher Workshop at Bielefeld University*, 10.03.2022
 
