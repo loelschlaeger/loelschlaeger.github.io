@@ -9,6 +9,9 @@ navbar:
     - icon: fa-microphone
       text: "Talks"
       href: talks.html
+    - icon: fa-bookmark
+      text: "Projects"
+      href: projects.html
   right:
     - icon: fa-envelope
       text: "Mail"
