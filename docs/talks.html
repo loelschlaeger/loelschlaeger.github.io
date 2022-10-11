@@ -181,8 +181,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -190,16 +190,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -319,7 +312,7 @@ $(document).ready(function () {
 <li><p><a href="files/slides/zest_24_11_2020.pdf">Approximating mixing distributions in probit models via a Bayesian approach</a>, <em>Centre for Statistics at Bielefeld University</em>, 24.11.2020</p></li>
 <li><p><a href="files/slides/doctoral_day_02_10_2020.pdf">Detecting bearish and bullish markets in financial time series using hierarchical hidden Markov models</a>, <em>Doctoral Day at Bielefeld University</em>, 02.10.2020</p></li>
 </ul>
-<p><em>Last update: 2022-10-07</em></p>
+<p><em>Last update: 2022-10-11</em></p>
 
 
 
