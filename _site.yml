@@ -24,7 +24,6 @@ navbar:
       href: https://twitter.com/l_oelschlaeger
 output:
   html_document:
-    highlight: textmate
     css: style.css
     includes:
       in_header: header.html
