@@ -1,0 +1,7 @@
+---
+title: " "
+pagetitle: "Lennart Oelschl&auml;ger"
+permalink: /404.html
+---
+
+<center> Sorry, 404'd. <a href="javascript:history.back()">Go Back</a></center>
