@@ -13,6 +13,7 @@
 
 <title>Lennart Oelschläger</title>
 
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -34,8 +35,8 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <head>
-  <base href="http://loelschlaeger.de" />
-  <link rel="stylesheet" href="/style.css" type="text/css" />
+  <base href="loelschlaeger.de" />
+  <link rel="stylesheet" href="site_libs/" type="text/css" />
 </head>
 
 <style type="text/css">
@@ -184,8 +185,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -193,9 +194,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -311,10 +319,17 @@ $(document).ready(function () {
 Hi, I’m Lennart!
 </h2>
 </div>
-<p>I’m a PhD student and Research Associate at Bielefeld University’s <a href="https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/">Econometrics Group</a>.</p>
-<p>In my spare time, you can find me above the clouds, on the tennis court, or in front of a chess board.</p>
-<p>I use this website to share my <a href="research.html">research</a> and list my <a href="talks.html">talks</a> and <a href="projects.html">projects</a>.</p>
-<p>You can download my CV <a href="cv/oelschlaeger.pdf">here</a> and find a list of my publications <a href="https://scholar.google.com/citations?hl=de&amp;user=k9n1yt4AAAAJ">here</a>.</p>
+<p>I’m a PhD student and Research Associate at Bielefeld University’s <a
+href="https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/">Econometrics
+Group</a>.</p>
+<p>In my spare time, you can find me above the clouds, on the tennis
+court, or in front of a chess board.</p>
+<p>I use this website to share my <a href="research.html">research</a>
+and list my <a href="talks.html">talks</a> and <a
+href="projects.html">projects</a>.</p>
+<p>You can download my CV <a href="cv/oelschlaeger.pdf">here</a> and
+find a list of my publications <a
+href="https://scholar.google.com/citations?hl=de&amp;user=k9n1yt4AAAAJ">here</a>.</p>
 
 
 
