@@ -13,6 +13,6 @@ I'm a PhD student and Research Associate at Bielefeld University's [Econometrics
 
 In my spare time, you can find me above the clouds, on the tennis court, or in front of a chess board.
 
-I use this website to share my [research](research.html) and list my [talks](talks.html) and [projects](projects.html).
+I use this website to share my [research](research.html), list my [talks](talks.html) and [projects](projects.html), and link to my [blog](blog.html).
 
 You can download my CV [here](cv/oelschlaeger.pdf) and find a list of my publications [here](https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ).

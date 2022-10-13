@@ -1,4 +1,5 @@
 output_dir: "docs"
+exclude: ["renv.lock"]
 navbar:
   title: "Lennart Oelschl&auml;ger"
   left:
@@ -11,15 +12,18 @@ navbar:
     - icon: fa-bookmark
       text: "Projects"
       href: "projects"
+    - icon: fa-pen
+      text: "Blog"
+      href: "/blog"
   right:
     - icon: fa-envelope
-      text: "Mail"
+      text: ""
       href: mailto:oelschlaeger.lennart@gmail.com
     - icon: fa-github
-      text: "GitHub"
+      text: ""
       href: https://github.com/loelschlaeger
     - icon: fa-twitter
-      text: "Twitter"
+      text: ""
       href: https://twitter.com/l_oelschlaeger
 output:
   html_document:
