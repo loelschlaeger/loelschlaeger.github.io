@@ -11,7 +11,7 @@ pagetitle: "Lennart Oelschl&auml;ger"
 
 I'm a PhD student and Research Associate at Bielefeld University's [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/).
 
-In my spare time, you can find me above the clouds, on the tennis court, or in front of a chess board.
+In my spare time, you can find me [above the clouds](https://www.youtube.com/watch?v=c2vc8qY3B5c), on the tennis court, or in front of a chess board.
 
 I use this website to share my [research](research.html), list my [talks](talks.html) and [projects](projects.html), and link to my [blog](blog.html).
 
