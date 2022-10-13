@@ -1,5 +1,5 @@
-name: "loelschlaeger.de"
-output_dir: "docs"
+name: "loelschlaeger"
+output_dir: "."
 navbar:
   title: "Lennart Oelschl&auml;ger"
   left:
