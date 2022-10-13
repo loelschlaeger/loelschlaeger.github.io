@@ -1,0 +1,26 @@
+/* For the typewriter effect.*/
+.typewriter h2{
+  width: auto;
+  display: inline-block;
+  overflow: hidden;
+  border-right: .1em solid black;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5s steps(100, end),
+			 blink-caret 1s step-end infinite;
+	margin-bottom: 10px;
+}
+
+@keyframes typing{
+  from {max-width: 0}
+  to {max-width: 100%}
+}
+
+@keyframes blink-caret{
+  from, to {border-color: transparent}
+  50% {border-color: black}
+}
+
+/* For the 'read more' effect.*/
+#more {display: none;}
+

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Lennart Oelschläger" />
+  <meta name="dcterms.date" content="2022-03-11" />
+  <title>Bayes Estimation of Probit Choice Models with {RprobitB}</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="slides_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="slides_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="style.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <script src="slides_files/header-attrs-2.11/header-attrs.js"></script>
+    <link href="slides_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="slides_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Bayes Estimation of Probit Choice Models with {RprobitB}</h1>
+  <h1 class="subtitle">10th Young Researchers Workshop, Bielefeld University</h1>
+    <h2 class="author">Lennart Oelschläger</h2>
+    <h3 class="date">March 11, 2022</h3>
+</section>
+
+<section id="topics" class="title-slide slide level1">
+<h1>Topics</h1>
+<ol type="1">
+<li><p>A glimpse into the package</p></li>
+<li><p>Some applications</p></li>
+<li><p>Bayesian model selection (WAIC, Bayes factor)</p></li>
+<li><p>The Dirichlet process for heterogeneous preferences</p></li>
+</ol>
+</section>
+
+<section>
+<section id="train-traveling-preferences" class="title-slide slide level1">
+<h1>Train traveling preferences</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+A
+</th>
+<th style="text-align:left;">
+B
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:left;">
+<img data-src="train_a.jpg" />
+</td>
+<td style="text-align:left;">
+<img data-src="train_b.jpg" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+price
+</td>
+<td style="text-align:left;">
+80€
+</td>
+<td style="text-align:left;">
+40€
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time
+</td>
+<td style="text-align:left;">
+1h
+</td>
+<td style="text-align:left;">
+2h
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+comfort
+</td>
+<td style="text-align:left;">
+0 (comfortable)
+</td>
+<td style="text-align:left;">
+2 (uncomfortable)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+changes
+</td>
+<td style="text-align:left;">
+1
+</td>
+<td style="text-align:left;">
+1
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-probit-model" class="slide level2">
+<h2>The probit model</h2>
+<p>The latent utility is a linear combination of the covariates:</p>
+<p><span class="math display">\[
+\begin{bmatrix} U_A \\ U_B \end{bmatrix} = \begin{bmatrix} \text{price}_A &amp; \text{time}_A &amp; \text{comfort}_A &amp; \text{changes}_A \\ \text{price}_B &amp; \text{time}_B &amp; \text{comfort}_B &amp; \text{changes}_B \end{bmatrix} \begin{bmatrix} \beta_{\text{price}} \\  \beta_{\text{time}} \\ \beta_{\text{comfort}} \\ \beta_{\text{changes}} \end{bmatrix} + \epsilon
+\]</span></p>
+<p>The error term is jointly normal:</p>
+<p><span class="math display">\[
+\epsilon \sim \text{MVN}(0, \Sigma)
+\]</span></p>
+<p>The chosen alternative is linked to the maximal utility:</p>
+<p><span class="math display">\[
+y = \arg \max U
+\]</span></p>
+</section>
+<section id="the-data" class="slide level2">
+<h2>The data</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># data(Train, package = &quot;mlogit&quot;) </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># transformed price to euros and time to hours</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>form <span class="ot">&lt;-</span> choice <span class="sc">~</span> price <span class="sc">+</span> time <span class="sc">+</span> change <span class="sc">+</span> comfort <span class="sc">|</span> <span class="dv">0</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">prepare_data</span>(<span class="at">form =</span> form, <span class="at">choice_data =</span> Train)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(data)</span></code></pre></div>
+<p><img src="unnamed-chunk-3-1.png" width="768" style="display: block; margin: auto;" /></p>
+</section>
+<section id="estimation" class="slide level2">
+<h2>Estimation</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">mcmc</span>(<span class="at">data  =</span> data,</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>              <span class="at">R     =</span> <span class="dv">1000</span>, <span class="co"># the number of Gibbs samples</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>              <span class="at">scale =</span> <span class="fu">list</span>(<span class="st">&quot;parameter&quot;</span> <span class="ot">=</span> <span class="st">&quot;a&quot;</span>, <span class="at">index =</span> <span class="dv">1</span>, <span class="at">value =</span> <span class="sc">-</span><span class="dv">1</span>),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>              <span class="at">print_progress =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(model)</span></code></pre></div>
+<pre><code>##            Estimate   (sd)
+## 1   price     -1.00 (0.00)
+## 2    time    -25.83 (2.19)
+## 3  change     -4.96 (0.91)
+## 4 comfort    -14.50 (0.90)</code></pre>
+</section>
+<section id="prediction" class="slide level2">
+<h2>Prediction</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">predict</span>(model)</span></code></pre></div>
+<pre><code>##     predicted
+## true    A    B
+##    A 1024  450
+##    B  439 1016</code></pre>
+<div class="fragment">
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">predict</span>(model, <span class="at">overview =</span> <span class="cn">FALSE</span>))</span></code></pre></div>
+<pre><code>##   id idc         A          B true predicted correct
+## 1  1   1 0.9167745 0.08322548    A         A    TRUE
+## 2  1   2 0.6383328 0.36166723    A         A    TRUE
+## 3  1   3 0.7923288 0.20767124    A         A    TRUE
+## 4  1   4 0.1779578 0.82204220    B         B    TRUE
+## 5  1   5 0.5488194 0.45118060    B         A   FALSE
+## 6  1   6 0.1291716 0.87082838    B         B    TRUE</code></pre>
+</div>
+</section></section>
+<section>
+<section id="chess-openings" class="title-slide slide level1">
+<h1>Chess openings</h1>
+<p><img src="first_move.png" width="50%" style="display: block; margin: auto;" /></p>
+</section>
+<section id="model-comparison" class="slide level2">
+<h2>Model comparison</h2>
+<p>Opening choice explained by</p>
+<ol start="0" type="1">
+<li><p>Intercept only</p></li>
+<li><p>Intercept + FIDE rating</p></li>
+<li><p>Intercept + FIDE rating + Age</p></li>
+<li><p>Intercept + FIDE rating + Age + Sex</p></li>
+</ol>
+<div class="fragment">
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">model_comparison</span>(mod0, mod1, mod2, mod3, <span class="at">criteria =</span> <span class="fu">c</span>(<span class="st">&quot;WAIC&quot;</span>, <span class="st">&quot;BF&quot;</span>))</span></code></pre></div>
+<pre><code>##                                      WAIC se(WAIC) pWAIC       MML BF:mod0 BF:mod1 BF:mod2 BF:mod3
+## mod0 move ~ 0 | 1                  621.51     0.02  0.99 1.41e-136       1    6.24   19.94   &gt; 100
+## mod1 move ~ 0 | rating             620.03     0.23  2.01 2.25e-137    0.16    1.00    3.20   52.46
+## mod2 move ~ 0 | rating + age       620.61     0.26  3.03 7.05e-138    0.05    0.31    1.00   16.42
+## mod3 move ~ 0 | rating + age + sex 619.12     0.25  3.70 4.29e-139  &lt; 0.01    0.02    0.06       1</code></pre>
+</div>
+</section>
+<section id="waic" class="slide level2">
+<h2>WAIC</h2>
+<p><span class="math display">\[
+\text{WAIC} = -2 ( \text{lppd} - p_\text{WAIC} ),~~ \text{lppd} = \sum_i \log S^{-1} \sum_s \Pr(y_i\mid \theta_s),~~p_\text{WAIC} = \sum_i \mathbb{V}_{\theta} \left[ \log \Pr(y_i\mid \theta_s) \right],
+\]</span></p>
+<p>where each <span class="math inline">\(\theta_s\)</span> is a posterior sample</p>
+<div class="fragment">
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>RprobitB<span class="sc">:::</span><span class="fu">waic</span>(mod3, <span class="at">S =</span> <span class="dv">2000</span>, <span class="at">print_progress =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<p><img src="unnamed-chunk-11-1.png" width="768" style="display: block; margin: auto;" /></p>
+</div>
+</section>
+<section id="bayes-factor" class="slide level2">
+<h2>Bayes factor</h2>
+<p><span class="math display">\[
+BF(\texttt{mod0},\texttt{mod1}) = \frac{\Pr(\texttt{mod0} \mid \texttt{y})}{\Pr(\texttt{mod1} \mid \texttt{y})} = \frac{\Pr(\texttt{y} \mid \texttt{mod0} ) \cdot \Pr(\texttt{mod1})}{\Pr(\texttt{y} \mid \texttt{mod1})\cdot \Pr(\texttt{mod0})}
+\]</span></p>
+<div class="fragment">
+<ol type="1">
+<li>Prior arithmetic mean estimate</li>
+</ol>
+<p><span class="math display">\[p(\texttt{y}\mid \texttt{mod}) = \mathbb{E}_\text{prior}~ p(\texttt{y}\mid \theta,\texttt{mod}) \approx \frac{1}{S} \sum_s p(\texttt{y}\mid \theta_s,\texttt{mod})\]</span></p>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li>Posterior harmonic mean estimate</li>
+</ol>
+<p><span class="math display">\[p(\texttt{y}\mid \texttt{mod}) = \mathbb{E}_\text{posterior}^{-1}~ 1/p(\texttt{y}\mid \theta,\texttt{mod}) \approx \left( \frac{1}{S} \sum_s 1/p(\texttt{y}\mid \theta_s,\texttt{mod}) \right) ^{-1}\]</span></p>
+</div>
+</section>
+<section id="prior-arithmetic-mean-estimate" class="slide level2">
+<h2>Prior arithmetic mean estimate</h2>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>RprobitB<span class="sc">:::</span><span class="fu">mml</span>(mod3, <span class="at">S =</span> <span class="dv">5000</span>, <span class="at">method =</span> <span class="st">&quot;pame&quot;</span>)</span></code></pre></div>
+<p><img src="unnamed-chunk-12-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<pre><code>## [1] 8.535092e-138</code></pre>
+</section>
+<section id="posterior-harmonic-mean-estimate" class="slide level2">
+<h2>Posterior harmonic mean estimate</h2>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>RprobitB<span class="sc">:::</span><span class="fu">mml</span>(mod3, <span class="at">S =</span> <span class="dv">5000</span>, <span class="at">method =</span> <span class="st">&quot;phme&quot;</span>)</span></code></pre></div>
+<p><img src="unnamed-chunk-13-1.png" width="70%" style="display: block; margin: auto;" /></p>
+<pre><code>## [1] 2.076952e-135</code></pre>
+</section></section>
+<section>
+<section id="heterogeneous-preferences" class="title-slide slide level1">
+<h1>Heterogeneous preferences</h1>
+<p>Remember the probit model equation</p>
+<p><span class="math display">\[U = X \beta + \epsilon.\]</span> Now let</p>
+<p><span class="math display">\[ \beta \sim \sum_{c = 1,\dots,C} \text{MVN}(b_c, \Omega_c).\]</span></p>
+</section>
+<section id="how-many-classes" class="slide level2">
+<h2>How many classes?</h2>
+<p><img data-src="origin.png" style="display: block; margin: 0 auto" /></p>
+</section>
+<section id="the-dirichlet-process" class="slide level2">
+<h2>The Dirichlet process</h2>
+<p><img data-src="progress.gif" style="display: block; margin: 0 auto" /></p>
+</section>
+<section id="contraception-choice" class="slide level2">
+<h2>Contraception choice</h2>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">prepare_data</span>(</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">form =</span> pill_condom <span class="sc">~</span> <span class="dv">0</span> <span class="sc">|</span> age <span class="sc">+</span> cwish <span class="sc">+</span> relstat,</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">re =</span> <span class="fu">c</span>(<span class="st">&quot;cwish&quot;</span>, <span class="st">&quot;relstat&quot;</span>),</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">choice_data =</span> pairfam</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(data, <span class="at">by_choice =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<p><img src="unnamed-chunk-16-1.png" width="768" style="display: block; margin: auto;" /></p>
+</section>
+<section id="contraception-choice-1" class="slide level2">
+<h2>Contraception choice</h2>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">mcmc</span>(data, </span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">latent_classes =</span> <span class="fu">list</span>(<span class="st">&quot;C&quot;</span> <span class="ot">=</span> <span class="dv">10</span>, <span class="st">&quot;dp_update&quot;</span> <span class="ot">=</span> <span class="cn">TRUE</span>), </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">R =</span> <span class="dv">1000</span>, <span class="at">B =</span> <span class="dv">900</span>,</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">prior =</span> <span class="fu">list</span>(<span class="st">&quot;delta&quot;</span> <span class="ot">=</span> <span class="fl">0.8</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(model, <span class="at">type =</span> <span class="st">&quot;class_seq&quot;</span>)</span></code></pre></div>
+<p><img src="unnamed-chunk-18-1.png" width="768" style="display: block; margin: auto;" /></p>
+</section>
+<section id="contraception-choice-2" class="slide level2">
+<h2>Contraception choice</h2>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">coef</span>(model))</span></code></pre></div>
+<p><img src="unnamed-chunk-19-1.png" width="768" style="display: block; margin: auto;" /></p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="slides_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="slides_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+        menu: {
+   
+          numbers: true,
+    
+    
+    
+    
+    
+    
+ 
+          custom: false,
+          themes: false,
+          transitions: false
+        },
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'slides_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
