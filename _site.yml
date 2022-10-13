@@ -4,13 +4,13 @@ navbar:
   left:
     - icon: fa-search
       text: "Research"
-      href: research
+      href: "research/"
     - icon: fa-microphone
       text: "Talks"
-      href: talks
+      href: "talks/"
     - icon: fa-bookmark
       text: "Projects"
-      href: projects
+      href: "projects/"
   right:
     - icon: fa-envelope
       text: "Mail"
