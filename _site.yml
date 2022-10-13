@@ -5,13 +5,13 @@ navbar:
   left:
     - icon: fa-search
       text: "Research"
-      href: research.html
+      href: research
     - icon: fa-microphone
       text: "Talks"
-      href: talks.html
+      href: talks
     - icon: fa-bookmark
       text: "Projects"
-      href: projects.html
+      href: project
   right:
     - icon: fa-envelope
       text: "Mail"
