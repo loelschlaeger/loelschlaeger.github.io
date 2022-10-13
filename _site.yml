@@ -11,7 +11,7 @@ navbar:
       href: talks
     - icon: fa-bookmark
       text: "Projects"
-      href: project
+      href: projects
   right:
     - icon: fa-envelope
       text: "Mail"
