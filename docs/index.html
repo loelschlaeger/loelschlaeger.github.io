@@ -13,7 +13,6 @@
 
 <title>Lennart Oelschläger</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
@@ -181,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -190,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -315,18 +307,10 @@ $(document).ready(function () {
 Hi, I’m Lennart!
 </h2>
 </div>
-<p>I’m a PhD student and Research Associate at Bielefeld University’s <a
-href="https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/">Econometrics
-Group</a>.</p>
-<p>In my spare time, you can find me <a
-href="https://www.youtube.com/watch?v=c2vc8qY3B5c">above the clouds</a>,
-on the tennis court, or in front of a chess board.</p>
-<p>I use this website to share my <a href="research.html">research</a>,
-list my <a href="talks.html">talks</a>, and link to my <a
-href="projects.html">projects</a>.</p>
-<p>You can download my CV <a href="cv/oelschlaeger.pdf">here</a> and
-find a list of my publications <a
-href="https://scholar.google.com/citations?hl=de&amp;user=k9n1yt4AAAAJ">here</a>.</p>
+<p>I’m a PhD student and Research Associate at Bielefeld University’s <a href="https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/">Econometrics Group</a>.</p>
+<p>In my spare time, you can find me <a href="https://www.youtube.com/watch?v=c2vc8qY3B5c">above the clouds</a>, on the tennis court, or in front of a chess board.</p>
+<p>I use this website to share my <a href="research.html">research</a>, list my <a href="talks.html">talks</a>, and link to my <a href="projects.html">projects</a>.</p>
+<p>You can download my CV <a href="cv/oelschlaeger.pdf">here</a> and find a list of my publications <a href="https://scholar.google.com/citations?hl=de&amp;user=k9n1yt4AAAAJ">here</a>.</p>
 
 
 
