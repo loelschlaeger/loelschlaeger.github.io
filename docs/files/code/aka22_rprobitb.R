@@ -3,6 +3,7 @@
 
 # install.packages("RprobitB")
 library("RprobitB")
+stopifnot(packageVersion("RprobitB") == "1.1.2")
 
 # Define Setting ----------------------------------------------------------
 
@@ -47,9 +48,4 @@ plot(fit, "trace")
 summary(fit)
 coef(fit)
 
-# Prediction --------------------------------------------------------------
-
-predict(fit)
-predict(fit, overview = FALSE)
-get_cov(fit, 1, 1)
 
