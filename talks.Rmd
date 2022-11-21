@@ -3,6 +3,8 @@ title: "My talks"
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
+- [Advances in the initialization of probit model estimation and the {ino} R package](files/slides/yrw_18_11_2022.pdf), *11th Young Researcher Workshop at Bielefeld University*, 18.11.2022
+
 - [Modellierung ordinaler Pr&auml;ferenzen mit {RprobitB} am Beispiel des pairfam Panels](files/slides/aka_10_11_2022.pdf), *27. AKA-Workshop at Kloster Irsee*, 10.11.2022
 
 - [Our contact points with big data in empirical methods](files/slides/doctoral_day_07_10_2022.pdf), *Doctoral Day at ZiF Bielefeld*, 07.10.2022 (with Carlina Feldmann and Jonas Bauer)
