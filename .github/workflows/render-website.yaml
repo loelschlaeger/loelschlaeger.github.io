@@ -19,9 +19,6 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
       
-      - name: Install rmarkdown
-        run: Rscript -e 'install.packages("rmarkdown")'
-      
       - name: Render website
         run: Rscript -e 'rmarkdown::render_site()'
       

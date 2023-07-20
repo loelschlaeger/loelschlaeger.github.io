@@ -16,10 +16,7 @@ jobs:
       - uses: r-lib/actions/setup-pandoc@v2
       
       - name: Install tinytex
-        run: Rscript -e 'install.packages("tinytex"); tinytex::install_tinytex()'
-        
-      - name: Install rmarkdown
-        run: Rscript -e 'install.packages("rmarkdown")'
+        run: Rscript -e 'tinytex::install_tinytex()'
         
       - name: Render CV to cv folder
         run: Rscript -e 'rmarkdown::render("cv/oelschlaeger.Rmd")'
