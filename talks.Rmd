@@ -3,6 +3,8 @@ title: "My talks"
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
+- [Initialization of numerical optimization in R](files/slides/yrw_07_09_2023.pdf), *12th Young Researcher Workshop at Bielefeld University*, 07.09.2023
+
 - [Advances in the initialization of probit model estimation and the {ino} R package](files/slides/yrw_18_11_2022.pdf), *11th Young Researcher Workshop at Bielefeld University*, 18.11.2022
 
 - [Modellierung ordinaler Pr&auml;ferenzen mit {RprobitB} am Beispiel des pairfam Panels](files/slides/aka_10_11_2022.pdf), *27. AKA-Workshop at Kloster Irsee*, 10.11.2022
