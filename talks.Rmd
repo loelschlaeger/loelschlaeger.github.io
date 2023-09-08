@@ -3,6 +3,10 @@ title: "My talks"
 pagetitle: "Lennart Oelschl&auml;ger"
 ---
 
+A list of my recent presentations at conferences and workshops. *Last update: `r Sys.Date()`*
+
+## Slides
+
 - [Initialization of numerical optimization in R](files/slides/yrw_07_09_2023.pdf), *12th Young Researcher Workshop at Bielefeld University*, 07.09.2023
 
 - [Advances in the initialization of probit model estimation and the {ino} R package](files/slides/yrw_18_11_2022.pdf), *11th Young Researcher Workshop at Bielefeld University*, 18.11.2022
@@ -17,10 +21,12 @@ pagetitle: "Lennart Oelschl&auml;ger"
 
 - [On the initialization of multinomial probit models](files/slides/yrw_16_07_2021.pdf), *9th Young Researcher Workshop at Bielefeld University*, 16.07.2021
 
-- [Bayes estimation of latent class mixed multinomial probit models](files/slides/trb_28_01_2021.pdf), *Poster Session at the 100th Transportation Research Board Annual Meeting*, 28.01.2021
-
 - [Approximating mixing distributions in probit models via a Bayesian approach](files/slides/zest_24_11_2020.pdf), *Centre for Statistics at Bielefeld University*, 24.11.2020
 
 - [Detecting bearish and bullish markets in financial time series using hierarchical hidden Markov models](files/slides/doctoral_day_02_10_2020.pdf), *Doctoral Day at Bielefeld University*, 02.10.2020
 
-*Last update: `r Sys.Date()`*
+## Posters
+
+- [Bayesian probit models for preference classification](files/poster/IWSM2023-oelschlaeger-bauer-poster.pdf), *IWSM 2023*, 18.07.2023
+
+- [Bayes estimation of latent class mixed multinomial probit models](files/poster/trb_28_01_2021.pdf), *Transportation Research Board Annual Meeting*, 28.01.2021
