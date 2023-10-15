@@ -1,6 +1,5 @@
 <!-- badges: start -->
 
-(https://github.com/loelschlaeger/loelschlaeger.github.io/actions/workflows/render-website.yaml)
 [![Render CV](https://github.com/loelschlaeger/loelschlaeger.github.io/actions/workflows/render-cv.yaml/badge.svg)](https://github.com/loelschlaeger/loelschlaeger.github.io/actions/workflows/render-cv.yaml)
 
 <!-- badges: end -->
