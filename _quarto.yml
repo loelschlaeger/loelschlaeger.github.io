@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "!cv/"
+
+website:
+  title: "Lennart Oelschl&auml;ger"
+  navbar:
+    left:
+      - icon: search
+        text: "Research"
+        href: research.qmd
+      - icon: megaphone
+        text: "Talks"
+        href: talks.qmd
+      - icon: sliders
+        text: "Projects"
+        href: projects.qmd
+  search: false
+  
+format:
+  html:
+    theme: simplex
+    css: styles.css

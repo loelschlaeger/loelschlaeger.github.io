@@ -1,6 +1,0 @@
----
-title: "My projects"
-pagetitle: "Lennart Oelschl&auml;ger"
----
-
-TBA
