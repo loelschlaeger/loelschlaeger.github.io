@@ -2,6 +2,6 @@
 title: "Page Not Found"
 ---
 
-Sorry, this site does not exist. You can <form> <input type="button" value="go back" onclick="history.back()"> </form> or stay a bit and watch some chess.
+Sorry, this site does not exist. You can <input type="button" value="go back" onclick="history.back()"> or stay a bit and watch some chess.
 
-<iframe src="https://lichess.org/tv/frame?theme=brown&bg=dark" style="width: 400px; height: 444px;" allowtransparency="true" frameborder="0"></iframe>
+<iframe src="https://lichess.org/tv/frame?theme=brown&bg=dark" style="width: 400px; height: 444px; display: block;" allowtransparency="true" frameborder="0"></iframe>
