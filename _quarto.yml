@@ -3,7 +3,6 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
-    - "!cv/"
 
 website:
   title: "Lennart Oelschl&auml;ger"
@@ -23,4 +22,3 @@ website:
 format:
   html:
     theme: simplex
-    css: styles.css
