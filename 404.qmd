@@ -4,6 +4,6 @@ title: "Page Not Found"
 
 Sorry, this site does not exist. You can <input type="button" value="go back" onclick="history.back()"> or stay a bit and watch some chess.
 
-<div style="text-align: center;">
+<div id="quarto-content" style="text-align: center;">
   <iframe src="https://lichess.org/tv/frame?theme=brown&bg=light" style="width: 400px; height: 444px;" allowtransparency="true" frameborder="0"></iframe>
 </div>
