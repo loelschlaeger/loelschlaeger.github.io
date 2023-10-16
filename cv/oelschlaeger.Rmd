@@ -9,7 +9,7 @@ author: Lennart Oelschl&auml;ger
 jobtitle: "Research Associate and PhD Student"
 address: "Bielefeld University, Germany"
 birthday: "16.11.1994"
-motto: "Identify the essential. Eliminate the rest."
+motto: "Identify the essential. Can you eliminate the rest?"
 fontawesome: yes
 email: oelschlaeger.lennart@gmail.com
 github: loelschlaeger

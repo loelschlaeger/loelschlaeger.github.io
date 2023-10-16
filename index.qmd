@@ -16,12 +16,22 @@ about:
       icon: github
       aria-label: GitHub
     - text: Email
-      href: mailto::oelschlaeger.lennart@gmail.com
+      href: mailto:oelschlaeger.lennart@gmail.com
       icon: envelope
       aria-label: Email
+    - text: Google Scholar
+      href: https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ
+      icon: files
+      aria-label: Google Scholar
+    - text: CV
+      href: cv/oelschlaeger.pdf
+      icon: filetype-pdf
+      aria-label: CV
 ---
 
-Hi, I'm Lennart! I'm a PhD student and Research Associate at Bielefeld University's [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/).
+Hi, I'm Lennart. I'm a PhD student and Research Associate at Bielefeld University's [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/).
+
+I like data science, teaching data science, and developing tools for data science in R.
 
 In my spare time, you can find me 
 
@@ -29,10 +39,9 @@ In my spare time, you can find me
 - on the tennis court, 
 - or in front of a chess board.
 
-I use this website 
+I use this website to
 
-- to share my [research](research.html), 
+- share my [research](research.html), 
 - list my [talks](talks.html), 
 - and link to my [projects](projects.html).
 
-You can download my CV [here](cv/oelschlaeger.pdf) and find a list of my publications [here](https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ).
