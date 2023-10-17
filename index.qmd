@@ -27,6 +27,7 @@ about:
       href: cv/oelschlaeger.pdf
       icon: filetype-pdf
       aria-label: CV
+comments: false
 ---
 
 Hi, I'm Lennart. I'm a PhD student and Research Associate at Bielefeld University's [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/).
@@ -41,7 +42,8 @@ In my spare time, you can find me
 
 I use this website to
 
-- share my [research](research.html), 
-- list my [talks](talks.html), 
-- and link to my [projects](projects.html).
+- present my [research](research.qmd), 
+- list my [talks](talks.qmd), 
+- link to my [projects](projects.qmd),
+- and share some [thoughts](thoughts.qmd).
 

@@ -1,0 +1,17 @@
+---
+title: "My thoughts"
+subtitle: "A bunch of thoughts and ideas. Feel free to agree or disagree (in the comments)."
+date-modified: last-modified
+listing:
+  contents: thoughts
+  type: grid
+  fields: [title]
+  filter-ui: [title]
+comments: false
+---
+
+::: {.callout-caution}
+## Work in progress
+
+I am currently working on this page, please come back later.
+:::

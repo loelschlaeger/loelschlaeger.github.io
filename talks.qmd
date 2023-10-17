@@ -1,9 +1,10 @@
 ---
 title: "My talks"
 subtitle: "A list of my recent presentations at conferences and workshops."
-date-modified: last-modified
+comments: false
 ---
 
+::: {.callout-note collapse="true" appearance="minimal"}
 ## Slides
 
 - [Facilitating probit likelihood optimization](files/slides/statwo_12_09_2023.pdf), *Statistische Woche*, 12.09.2023
@@ -25,9 +26,12 @@ date-modified: last-modified
 - [Approximating mixing distributions in probit models via a Bayesian approach](files/slides/zest_24_11_2020.pdf), *Centre for Statistics at Bielefeld University*, 24.11.2020
 
 - [Detecting bearish and bullish markets in financial time series using hierarchical hidden Markov models](files/slides/doctoral_day_02_10_2020.pdf), *Doctoral Day at Bielefeld University*, 02.10.2020
+:::
 
+::: {.callout-note collapse="true" appearance="minimal"}
 ## Posters
 
 - [Bayesian probit models for preference classification](files/poster/IWSM2023-oelschlaeger-bauer-poster.pdf), *IWSM 2023*, 18.07.2023
 
 - [Bayes estimation of latent class mixed multinomial probit models](files/poster/trb_28_01_2021.pdf), *Transportation Research Board Annual Meeting*, 28.01.2021
+:::

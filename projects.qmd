@@ -1,5 +1,11 @@
 ---
 title: "My projects"
+subtitle: "A small outline of my current projects."
+comments: false
 ---
 
-TBA
+::: {.callout-caution}
+## Work in progress
+
+I am currently working on this page, please come back later.
+:::

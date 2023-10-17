@@ -17,8 +17,15 @@ website:
       - icon: sliders
         text: "Projects"
         href: projects.qmd
+      - icon: lightbulb
+        text: "Thoughts"
+        href: thoughts.qmd
   search: false
   
 format:
   html:
     theme: simplex
+    
+comments:
+  utterances:
+    repo: loelschlaeger/loelschlaeger.github.io
