@@ -1,6 +1,6 @@
 ---
 title: "Lennart Oelschl&auml;ger"
-image: files/images/lennart_oelschlaeger_square_small.jpg
+image: files/images/lennart_oelschlaeger.jpg
 toc: false
 about: 
   template: broadside
@@ -30,7 +30,7 @@ about:
 comments: false
 ---
 
-Hi, I'm Lennart. I'm a PhD student at Bielefeld University's [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/). I like data science, teaching data science, and developing tools for data science in R.
+Hi, I'm Lennart. I'm a doctoral student in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like data science, teaching data science, and developing tools for data science in R.
 
 In my spare time, you can find me 
 
@@ -42,6 +42,5 @@ I use this website to
 
 - present my [research](research.qmd), 
 - list my [talks](talks.qmd), 
-- link to my [projects](projects.qmd),
-- and share some [thoughts](thoughts.qmd).
+- and share my [projects](projects.qmd).
 

@@ -17,9 +17,6 @@ website:
       - icon: sliders
         text: "Projects"
         href: projects.qmd
-      - icon: lightbulb
-        text: "Thoughts"
-        href: thoughts.qmd
   search: false
   
 format:

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Lennart Oelschläger",
     "section": "",
-    "text": "Hi, I’m Lennart. I’m a PhD student at Bielefeld University’s Econometrics Group. I like data science, teaching data science, and developing tools for data science in R.\nIn my spare time, you can find me\n\nabove the clouds,\non the tennis court,\nor in front of a chess board.\n\nI use this website to\n\npresent my research,\nlist my talks,\nlink to my projects,\nand share some thoughts."
+    "text": "Hi, I’m Lennart. I’m a doctoral student in the Econometrics Group at Bielefeld University. I like data science, teaching data science, and developing tools for data science in R.\nIn my spare time, you can find me\n\nabove the clouds,\non the tennis court,\nor in front of a chess board.\n\nI use this website to\n\npresent my research,\nlist my talks,\nand share my projects."
   },
   {
     "objectID": "projects.html",
@@ -26,12 +26,5 @@
     "title": "My talks",
     "section": "",
     "text": "Slides\n\n\n\n\n\n\nFacilitating probit likelihood optimization, Statistische Woche, 12.09.2023\nInitialization of numerical optimization in R, 12th Young Researcher Workshop at Bielefeld University, 07.09.2023\nAdvances in the initialization of probit model estimation and the {ino} R package, 11th Young Researcher Workshop at Bielefeld University, 18.11.2022\nModellierung ordinaler Präferenzen mit {RprobitB} am Beispiel des pairfam Panels, 27. AKA-Workshop at Kloster Irsee, 10.11.2022\nOur contact points with big data in empirical methods, Doctoral Day at ZiF Bielefeld, 07.10.2022 (with Carlina Feldmann and Jonas Bauer)\nBayes estimation of probit choice models with {RprobitB}, 10th Young Researcher Workshop at Bielefeld University, 10.03.2022\nKlassifizierung von Präferenzen: Eine Anwendung mit dem R Paket RprobitB, 26. AKA-Workshop at Kloster Irsee, 18.11.2021\nOn the initialization of multinomial probit models, 9th Young Researcher Workshop at Bielefeld University, 16.07.2021\nApproximating mixing distributions in probit models via a Bayesian approach, Centre for Statistics at Bielefeld University, 24.11.2020\nDetecting bearish and bullish markets in financial time series using hierarchical hidden Markov models, Doctoral Day at Bielefeld University, 02.10.2020\n\n\n\n\n\n\n\n\n\n\nPosters\n\n\n\n\n\n\nBayesian probit models for preference classification, IWSM 2023, 18.07.2023\nBayes estimation of latent class mixed multinomial probit models, Transportation Research Board Annual Meeting, 28.01.2021"
-  },
-  {
-    "objectID": "thoughts.html",
-    "href": "thoughts.html",
-    "title": "My thoughts",
-    "section": "",
-    "text": "Work in progress\n\n\n\nI am currently working on this page, please come back later.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\nNo matching items"
   }
 ]
