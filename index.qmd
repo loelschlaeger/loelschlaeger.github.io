@@ -30,7 +30,7 @@ about:
 comments: false
 ---
 
-Hi, I'm Lennart. I'm a doctoral student in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like math and data science, teaching both, and developing open source software in R.
+Hi, I'm Lennart. I'm a doctoral student in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like math and data science, teaching both, and developing open source software.
 
 In my spare time, you can find me 
 
