@@ -11,10 +11,12 @@ about:
       href: https://twitter.com/l_oelschlaeger
       icon: twitter
       aria-label: Twitter (or X, if you prefer)
+      target: _blank
     - text: GitHub
       href: https://github.com/loelschlaeger
       icon: github
       aria-label: GitHub
+      target: _blank
     - text: Email
       href: mailto:oelschlaeger.lennart@gmail.com
       icon: envelope
@@ -22,6 +24,7 @@ about:
     - text: "{{< ai google-scholar >}} Google Scholar"
       href: https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ
       aria-label: Google Scholar
+      target: _blank
     - text: "{{< ai cv >}} Curriculum Vitae"
       href: https://loelschlaeger.de/cv
       aria-label: CV

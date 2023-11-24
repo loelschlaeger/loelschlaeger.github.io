@@ -25,6 +25,8 @@ website:
 format:
   html:
     theme: simplex
+    link-external-icon: true
+    link-external-filter: ^(?:http:|https:)\/\/www\.loelschlaeger\.de\/custom
     
 comments:
   utterances:
