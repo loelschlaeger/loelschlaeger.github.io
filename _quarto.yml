@@ -26,7 +26,7 @@ format:
   html:
     theme: simplex
     link-external-icon: true
-    link-external-filter: ^(?:http:|https:)\/\/www\.loelschlaeger\.de\/custom
+    link-external-filter: loelschlaeger.de|loelschlaeger.github.io|mailto
     
 comments:
   utterances:

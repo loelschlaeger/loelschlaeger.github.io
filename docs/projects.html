@@ -370,7 +370,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp("^(?:http:|https:)\/\/www\.loelschlaeger\.de\/custom");
+      var filterRegex = new RegExp("loelschlaeger.de|loelschlaeger.github.io|mailto");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href);
     }
