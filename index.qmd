@@ -7,10 +7,10 @@ about:
   image-shape: round
   image-width: 20em
   links:
-    - text: Twitter
+    - text: Twitter (or X, if you prefer)
       href: https://twitter.com/l_oelschlaeger
       icon: twitter
-      aria-label: Twitter
+      aria-label: Twitter (or X, if you prefer)
     - text: GitHub
       href: https://github.com/loelschlaeger
       icon: github
@@ -19,13 +19,11 @@ about:
       href: mailto:oelschlaeger.lennart@gmail.com
       icon: envelope
       aria-label: Email
-    - text: Google Scholar
+    - text: "{{< ai google-scholar >}} Google Scholar"
       href: https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ
-      icon: files
       aria-label: Google Scholar
-    - text: CV
-      href: cv/oelschlaeger.pdf
-      icon: filetype-pdf
+    - text: "{{< ai cv >}} Curriculum Vitae"
+      href: https://loelschlaeger.de/cv
       aria-label: CV
 comments: false
 ---
