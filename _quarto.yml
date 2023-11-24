@@ -17,6 +17,9 @@ website:
       - icon: sliders
         text: "Projects"
         href: projects.qmd
+      - icon: pencil
+        text: "Blog"
+        href: https://loelschlaeger.de/blog
   search: false
   
 format:
