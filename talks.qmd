@@ -1,6 +1,6 @@
 ---
 title: "My talks"
-subtitle: "A list of my recent presentations at conferences and workshops."
+subtitle: "A list of my recent presentations at conferences and workshops"
 comments: false
 ---
 

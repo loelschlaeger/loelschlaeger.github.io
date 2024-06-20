@@ -1,6 +1,6 @@
 ---
 title: "My research"
-subtitle: "A small outline of my current research interests."
+subtitle: "A small outline of my current research interests"
 comments: false
 ---
 

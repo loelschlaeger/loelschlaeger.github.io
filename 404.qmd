@@ -5,8 +5,6 @@ comments: false
 
 <div id="quarto-content" style="text-align: center;">
 
-Sorry, this page does not exist. You can <input type="button" value="go back" onclick="history.back()"> or watch some chess.
+Sorry, this page does not exist, you can <input type="button" value="go back" onclick="history.back()">.
 
-<iframe src="https://lichess.org/tv/bullet/frame?theme=brown&bg=light" style="background: #FFFFFF; width: 380px; height: 416px;" allowtransparency="false" frameborder="0"></iframe>
-  
 </div>

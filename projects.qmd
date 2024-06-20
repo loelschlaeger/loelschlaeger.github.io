@@ -1,6 +1,6 @@
 ---
 title: "My projects"
-subtitle: "An overview of my current projects."
+subtitle: "An overview of my current projects"
 comments: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "My teaching"
-subtitle: "Materials for my teaching."
+subtitle: "Materials for my teaching"
 comments: false
 ---
 
