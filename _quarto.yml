@@ -14,9 +14,12 @@ website:
       - icon: megaphone
         text: "Talks"
         href: talks.qmd
-      - icon: sliders
+      - icon: code-slash
         text: "Projects"
         href: projects.qmd
+      - icon: book
+        text: "Teaching"
+        href: teaching.qmd 
   search: false
   
 format:

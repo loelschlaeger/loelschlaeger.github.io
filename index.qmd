@@ -7,10 +7,9 @@ about:
   image-shape: round
   image-width: 20em
   links:
-    - text: Twitter (or X, if you prefer)
-      href: https://twitter.com/l_oelschlaeger
-      icon: twitter
-      aria-label: Twitter (or X, if you prefer)
+    - text: "{{< fa brands x-twitter >}} X"
+      href: https://x.com/l_oelschlaeger
+      aria-label: X
     - text: GitHub
       href: https://github.com/loelschlaeger
       icon: github
@@ -22,13 +21,13 @@ about:
     - text: "{{< ai google-scholar >}} Google Scholar"
       href: https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ
       aria-label: Google Scholar
-    - text: "{{< ai cv >}} Curriculum Vitae"
+    - text: "{{< ai cv >}} Vita"
       href: https://loelschlaeger.de/cv
       aria-label: CV
 comments: false
 ---
 
-Hi, I'm Lennart. I'm a doctoral student in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like math and data science, teaching both, and developing open source software.
+Hi, I'm Lennart. I'm a doctoral student in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like data science and math, teaching both, and developing open source software.
 
 In my spare time, you can find me 
 
@@ -40,5 +39,6 @@ I use this website to
 
 - present my [research](research.qmd), 
 - list my [talks](talks.qmd), 
-- and share my [projects](projects.qmd).
+- share my [projects](projects.qmd),
+- and provide [teaching](teaching.qmd) material.
 
