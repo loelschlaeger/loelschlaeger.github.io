@@ -4,6 +4,12 @@ subtitle: "A small outline of my current research interests"
 comments: false
 ---
 
+::: {.callout-caution}
+## Work in progress
+
+I am currently working on this page, please come back later.
+:::
+
 ::: {.callout-note collapse="true" appearance="minimal"}
 ## Bayesian discrete choice modeling
 
