@@ -1,6 +1,16 @@
 ---
 title: "My teaching"
-subtitle: "Materials for my teaching"
+subtitle: "A collection of materials for my teaching"
+listing:
+  type: default
+  image-height: 285px
+  filter-ui: true
+  contents:
+    - title: "Einführung Mikroökonometrie"
+      path: https://github.com/loelschlaeger/mikro_oeko
+      image: /files/images/mikro_oeko_logo.png
+      description: "Microeconometrics uses statistical methods and mathematical models to analyze individual-level economic data, such as observations of people or companies."
+      categories: [german, bachelor]
 comments: false
 ---
 
