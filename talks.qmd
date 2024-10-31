@@ -9,7 +9,7 @@ comments: false
 
 - [Faster and more robust maximum likelihood estimation for random utility models](files/slides/icmc_01_04_2024.pdf), *ICMC in Chile*, 01.04.2024
 
-- [Modeling unobserved choice behavior heterogeneity](files/slides/yrw_16_02_2024.pdf), *13th Young Researcher Workshop at Bielefeld University*, 16.02.2023
+- [Modeling unobserved choice behavior heterogeneity](files/slides/yrw_16_02_2024.pdf), *13th Young Researcher Workshop at Bielefeld University*, 16.02.2024
 
 - [Facilitating probit likelihood optimization](files/slides/statwo_12_09_2023.pdf), *Statistische Woche in Dortmund*, 12.09.2023
 
