@@ -29,9 +29,9 @@ I'm a doctoral student in the [Econometrics Group](https://www.uni-bielefeld.de/
 ::: {.callout-note collapse="true" appearance="minimal"}
 ## Research Interests
 
--   Discrete choice models with a focus on preference heterogeneity and Bayesian estimation of latent class mixed multinomial probit models.
--   I explore methods for efficient initialization in numerical optimization and implemented the [ino package](https://loelschlaeger.de/ino/) to provide initialization tools.
--   Applied hierarchical HMMs to German stock data in my [master thesis](files/master_thesis_oelschlaeger.pdf), improving trend detection across different time scales.
+-   Discrete choice models, in particular preference heterogeneity and Bayesian estimation of latent class mixed multinomial probit models.
+-   Numerical optimization of likelihood functions, in particular methods for efficient and robust initialization.
+-   Hidden Markov models, in particular hierarchical extensions to improve trend detection in financial time series across different time scales.
 :::
 
 ::: {.callout-note collapse="true" appearance="minimal"}
