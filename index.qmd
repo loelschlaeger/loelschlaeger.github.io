@@ -1,44 +1,53 @@
 ---
 title: "Lennart Oelschl&auml;ger"
-image: files/images/lennart_oelschlaeger.jpg
-toc: false
+image: files/lennart_oelschlaeger.jpg
 about: 
-  template: broadside
-  image-shape: round
-  image-width: 20em
+  id: about-content
+  template: trestles
+  image-width: 21em
   links:
-    - text: "{{< fa brands x-twitter >}} X"
-      href: https://x.com/l_oelschlaeger
-      aria-label: X
     - text: GitHub
       href: https://github.com/loelschlaeger
       icon: github
       aria-label: GitHub
     - text: Email
       href: mailto:oelschlaeger.lennart@gmail.com
-      icon: envelope
+      icon: envelope-fill
       aria-label: Email
     - text: "{{< ai google-scholar >}} Google Scholar"
       href: https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ
       aria-label: Google Scholar
-    - text: "{{< ai cv >}} Vita"
-      href: https://loelschlaeger.de/cv
-      aria-label: CV
-comments: false
 ---
 
-Hi, I'm Lennart. I'm a doctoral student in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like data science and math, teaching both, and developing open source software.
+:::::: {#about-content}
+### Hi, I'm Lennart! 👋🙂
 
-In my spare time, you can find me 
+<div style="text-align: justify">
+I'm a doctoral student in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like data science and math, [teaching both](https://blogs.uni-bielefeld.de/blog/wiwi/entry/andreas_handl_lehrpreis_2024_anerkennung), and developing open source software. In my spare time, you can find me in front of a chess board or [above the clouds](https://www.youtube.com/watch?v=c2vc8qY3B5c).
+</div>
 
-- [above the clouds](https://www.youtube.com/watch?v=c2vc8qY3B5c), 
-- on the tennis court, 
-- or in front of a chess board.
+::: {.callout-note collapse="true" appearance="minimal"}
+## Research Interests
 
-I use this website to
+-   Discrete choice models with a focus on preference heterogeneity and Bayesian estimation of latent class mixed multinomial probit models.
+-   I explore methods for efficient initialization in numerical optimization and implemented the [ino package](https://github.com/loelschlaeger/ino) to provide initialization tools.
+-   Applied hierarchical HMMs to German stock data in my [master thesis](files/paper/master_thesis_oelschlaeger.pdf), improving trend detection across different time scales.
+:::
 
-- present my [research](research.qmd), 
-- list my [talks](talks.qmd), 
-- share my [projects](projects.qmd),
-- and provide [teaching](teaching.qmd) material.
+::: {.callout-note collapse="true" appearance="minimal"}
+## Recent Talks
 
+- [Faster and more robust maximum likelihood estimation for random utility models](files/icmc_01_04_2024.pdf), *ICMC in Chile*, 01.04.2024
+- [Modeling unobserved choice behavior heterogeneity](files/yrw_16_02_2024.pdf), *13th YRW at Bielefeld University*, 16.02.2024
+- [Facilitating probit likelihood optimization](files/statwo_12_09_2023.pdf), *Statistische Woche in Dortmund*, 12.09.2023
+- [Bayesian probit models for preference classification](files/IWSM2023-oelschlaeger-bauer-poster.pdf), *IWSM*, 18.07.2023
+- [Initialization of numerical optimization in R](files/yrw_07_09_2023.pdf), *12th YRW at Bielefeld University*, 07.09.2023
+- [Advances in the initialization of probit model estimation and the {ino} R package](files/yrw_18_11_2022.pdf), *11th YRW at Bielefeld University*, 18.11.2022
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
+## Software
+
+TBA
+:::
+::::::

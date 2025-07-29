@@ -5,29 +5,16 @@ project:
     - "*.qmd"
 
 website:
-  title: "Lennart Oelschl&auml;ger"
-  navbar:
-    left:
-      - icon: search
-        text: "Research"
-        href: research.qmd
-      - icon: megaphone
-        text: "Talks"
-        href: talks.qmd
-      - icon: code-slash
-        text: "Projects"
-        href: projects.qmd
-      - icon: book
-        text: "Teaching"
-        href: teaching.qmd 
+  favicon: favicon-32x32.png
   search: false
-  
+
+lang: de
+
 format:
   html:
-    theme: simplex
-    link-external-icon: true
-    link-external-filter: loelschlaeger.de|loelschlaeger.github.io|mailto
-    
-comments:
-  utterances:
-    repo: loelschlaeger/loelschlaeger.github.io
+    respect-user-color-scheme: true
+    theme:
+      light: flatly
+      dark: darkly
+    toc: false
+    link-external-newwindow: true
