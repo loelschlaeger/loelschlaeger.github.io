@@ -23,7 +23,7 @@ about:
 ### Hi, I'm Lennart! 👋🙂
 
 <div style="text-align: justify">
-I'm a PhD student in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like data science and math, [teaching both](https://blogs.uni-bielefeld.de/blog/wiwi/entry/andreas_handl_lehrpreis_2024_anerkennung), and developing open source software. In my spare time, you can find me in front of a chess board or [above the clouds](https://www.youtube.com/watch?v=c2vc8qY3B5c).
+I'm a doctoral student and research associate in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like data science and math, [teaching both](https://blogs.uni-bielefeld.de/blog/wiwi/entry/andreas_handl_lehrpreis_2024_anerkennung), and developing open source software. In my spare time, you can find me in front of a chess board or [above the clouds](https://www.youtube.com/watch?v=c2vc8qY3B5c).
 </div>
 
 ::: {.callout-note collapse="true" appearance="minimal"}
@@ -48,6 +48,14 @@ I'm a PhD student in the [Econometrics Group](https://www.uni-bielefeld.de/fakul
 ::: {.callout-note collapse="true" appearance="minimal"}
 ## Software
 
-TBA
+- [ao](https://loelschlaeger.de/ao/): Alternating Optimization
+- [fHMM](https://loelschlaeger.de/fHMM/): Fitting Hidden Markov Models to Financial Data
+- [ino](https://loelschlaeger.de/ino/): Initialization of Numerical Optimization
+- [normalize](https://CRAN.R-project.org/package=normalize): Centering and Scaling of Numeric Data
+- [oeli](https://loelschlaeger.de/oeli/): Some Utilities for Developing Data Science Software
+- [optimizeR](https://loelschlaeger.de/optimizeR/): Unified Framework for Numerical Optimizers
+- [portion](https://CRAN.R-project.org/package=portion): Extracting a Data Portion
+- [RprobitB](https://loelschlaeger.de/RprobitB/): Bayesian Probit Choice Modeling
+- [trackopt](https://loelschlaeger.de/trackopt/): Track Numerical Optimization
 :::
 ::::::
