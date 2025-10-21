@@ -20,7 +20,7 @@ about:
 ---
 
 :::::: {#about-content}
-### Hi, I'm Lennart! 👋🙂
+### Hi, I'm Lennart! <span aria-hidden="true">&#x1F44B;&#x1F642;</span>
 
 <div style="text-align: justify">
 I'm a doctoral student and research associate in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like data science and math, [teaching both](https://blogs.uni-bielefeld.de/blog/wiwi/entry/andreas_handl_lehrpreis_2024_anerkennung), and developing open source software. In my spare time, you can find me in front of a chess board or [above the clouds](https://www.youtube.com/watch?v=c2vc8qY3B5c).
@@ -29,9 +29,9 @@ I'm a doctoral student and research associate in the [Econometrics Group](https:
 ::: {.callout-note collapse="true" appearance="minimal"}
 ## Research Interests
 
--   Discrete choice models, in particular preference heterogeneity and Bayesian estimation of latent class mixed multinomial probit models.
--   Numerical optimization, in particular methods for efficient and robust initialization.
--   Hidden Markov models, in particular hierarchical extensions to improve trend detection in financial time series across different time scales.
+-   [Discrete choice models](https://en.wikipedia.org/wiki/Discrete_choice), in particular preference heterogeneity and Bayesian estimation of latent class mixed multinomial probit models.
+-   [Numerical optimization](https://en.wikipedia.org/wiki/Mathematical_optimization), in particular methods for efficient and robust initialization.
+-   [Hidden Markov models](https://en.wikipedia.org/wiki/Hidden_Markov_model), in particular hierarchical extensions to improve trend detection in financial time series across different time scales.
 :::
 
 ::: {.callout-note collapse="true" appearance="minimal"}
@@ -46,9 +46,16 @@ I'm a doctoral student and research associate in the [Econometrics Group](https:
 :::
 
 ::: {.callout-note collapse="true" appearance="minimal"}
+## Teaching
+
+Several lectures and tutorials in statistics and math. See [here](https://ekvv.uni-bielefeld.de/kvv_publ/publ/Lehrende_Veranstaltungen.jsp?personId=188400676&zeigeAlle=1) for a complete list.
+:::
+
+::: {.callout-note collapse="true" appearance="minimal"}
 ## Software
 
 - [ao](https://loelschlaeger.de/ao/): Alternating Optimization
+- [choicedata](https://loelschlaeger.de/choicedata/): Working with Choice Data
 - [fHMM](https://loelschlaeger.de/fHMM/): Fitting Hidden Markov Models to Financial Data
 - [ino](https://loelschlaeger.de/ino/): Initialization of Numerical Optimization
 - [normalize](https://CRAN.R-project.org/package=normalize): Centering and Scaling of Numeric Data
