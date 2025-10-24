@@ -64,5 +64,6 @@ Several lectures and tutorials in statistics and math. See [here](https://ekvv.u
 - [portion](https://CRAN.R-project.org/package=portion): Extracting a Data Portion
 - [RprobitB](https://loelschlaeger.de/RprobitB/): Bayesian Probit Choice Modeling
 - [trackopt](https://loelschlaeger.de/trackopt/): Track Numerical Optimization
+- [vntrs](https://loelschlaeger.de/vntrs/): Variable Neighborhood Trust Region Search
 :::
 ::::::
