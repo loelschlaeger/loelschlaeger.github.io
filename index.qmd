@@ -23,7 +23,7 @@ about:
 ### Hi, I'm Lennart! <span aria-hidden="true">&#x1F44B;&#x1F642;</span>
 
 <div style="text-align: justify">
-I'm a doctoral student and research associate in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University. I like data science and math, [teaching both](https://blogs.uni-bielefeld.de/blog/wiwi/entry/andreas_handl_lehrpreis_2024_anerkennung), and developing open source software. In my spare time, you can find me in front of a chess board or [above the clouds](https://www.youtube.com/watch?v=c2vc8qY3B5c).
+I am currently a research associate in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University and recently completed [my PhD](https://pub.uni-bielefeld.de/record/3014719). I like data science and math, [teaching both](https://blogs.uni-bielefeld.de/blog/wiwi/entry/andreas_handl_lehrpreis_2024_anerkennung), and developing open source software. In my spare time, you can find me [in front of a chess board](https://sf-lieme.de/) or [above the clouds](https://www.youtube.com/watch?v=c2vc8qY3B5c).
 </div>
 
 ::: {.callout-note collapse="true" appearance="minimal"}
