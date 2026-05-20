@@ -9,7 +9,7 @@
   gap: 0;
   line-height: 1;
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   right: 3rem;
   top: 0.85rem;
   z-index: 1040;
