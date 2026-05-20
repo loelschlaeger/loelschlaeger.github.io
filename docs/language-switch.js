@@ -97,7 +97,7 @@
       {
         code: "en",
         label: "EN",
-        href: "index.html",
+        href: "./",
         title: "Switch to the English version"
       }
     ];
