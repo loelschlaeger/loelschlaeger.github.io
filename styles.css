@@ -1,0 +1,37 @@
+.language-switch.top-right {
+  align-items: center;
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.25rem;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 700;
+  gap: 0;
+  line-height: 1;
+  overflow: hidden;
+  position: fixed;
+  right: 3rem;
+  top: 0.85rem;
+  z-index: 1040;
+}
+
+.language-switch a {
+  color: var(--bs-body-color);
+  display: inline-flex;
+  padding: 0.45rem 0.5rem;
+  text-decoration: none;
+}
+
+.language-switch a:hover,
+.language-switch a:focus {
+  background: var(--bs-secondary-bg);
+}
+
+.language-switch a.active {
+  background: var(--bs-primary);
+  color: var(--bs-white);
+}
+
+.quarto-color-scheme-toggle.top-right {
+  right: 0.85rem;
+}

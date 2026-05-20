@@ -3,12 +3,14 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+  resources:
+    - language-switch.js
 
 website:
   favicon: favicon-32x32.png
   search: false
 
-lang: de
+lang: en
 
 format:
   html:
@@ -18,3 +20,5 @@ format:
       dark: darkly
     toc: false
     link-external-newwindow: true
+    css: styles.css
+    include-after-body: language-switch.html
