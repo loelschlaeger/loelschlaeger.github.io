@@ -35,3 +35,36 @@
 .quarto-color-scheme-toggle.top-right {
   right: 0.85rem;
 }
+
+@media (max-width: 991.98px) {
+  div.quarto-about-trestles {
+    align-items: stretch;
+    padding-top: 3.25rem !important;
+  }
+
+  div.quarto-about-trestles .about-entity {
+    display: contents !important;
+  }
+
+  div.quarto-about-trestles .about-entity .about-image {
+    align-self: center;
+    order: 1;
+  }
+
+  div.quarto-about-trestles .about-entity #title-block-header {
+    order: 2;
+    text-align: center;
+    width: 100%;
+  }
+
+  div.quarto-about-trestles .about-contents {
+    order: 3;
+    width: 100%;
+  }
+
+  div.quarto-about-trestles .about-entity .about-links {
+    order: 4;
+    padding-bottom: 0;
+    padding-top: 1.5em;
+  }
+}
