@@ -4,7 +4,10 @@ project:
   render:
     - "*.qmd"
   resources:
-    - language-switch.js
+    - typewriter.js
+    - profile-image.js
+    - files/lennart_fliegen.jpeg
+    - files/lennart_schach.jpeg
 
 website:
   favicon: favicon-32x32.png
@@ -21,4 +24,4 @@ format:
     toc: false
     link-external-newwindow: true
     css: styles.css
-    include-after-body: language-switch.html
+    include-after-body: typewriter.html

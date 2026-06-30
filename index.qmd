@@ -6,7 +6,7 @@ about:
   id: about-content
   template: trestles
   image-width: 20em
-  image-alt: "Portrait of Lennart Oelschl&auml;ger"
+  image-alt: ""
   links:
     - text: GitHub
       href: https://github.com/loelschlaeger
@@ -17,12 +17,12 @@ about:
       icon: envelope-fill
       aria-label: Email
     - text: "{{< ai google-scholar >}} Google Scholar"
-      href: https://scholar.google.com/citations?hl=de&user=k9n1yt4AAAAJ
+      href: https://scholar.google.com/citations?hl=en&user=k9n1yt4AAAAJ
       aria-label: Google Scholar
 ---
 
 :::::: {#about-content}
-### Hi, I'm Lennart! <span aria-hidden="true">&#x1F44B;&#x1F642;</span>
+### Hi, I'm Lennart! <span aria-hidden="true">&#x1F44B;&#x1F642;</span> {.typewriter-on-load}
 
 <div style="text-align: justify">
 I am currently a research associate in the [Econometrics Group](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/lehrbereiche/econometrics/) at Bielefeld University and recently completed [my PhD](https://pub.uni-bielefeld.de/record/3014719). I like data science and math, [teaching both](https://blogs.uni-bielefeld.de/blog/wiwi/entry/andreas_handl_lehrpreis_2024_anerkennung), and developing open source software. In my spare time, you can find me [in front of a chessboard](https://sf-lieme.de/) or [above the clouds](https://www.youtube.com/watch?v=c2vc8qY3B5c).
@@ -39,12 +39,12 @@ I am currently a research associate in the [Econometrics Group](https://www.uni-
 ::: {.callout-note collapse="true" appearance="minimal"}
 ## Recent Talks
 
-- [Faster and more robust maximum likelihood estimation for random utility models](files/icmc_01_04_2024.pdf), ICMC in Puerto Varas, 01.04.2024
-- [Modeling unobserved choice behavior heterogeneity](files/yrw_16_02_2024.pdf), 13th YRW at Bielefeld University, 16.02.2024
-- [Facilitating probit likelihood optimization](files/statwo_12_09_2023.pdf), Statistische Woche in Dortmund, 12.09.2023
-- [Bayesian probit models for preference classification](files/IWSM2023-oelschlaeger-bauer-poster.pdf), IWSM in Dortmund, 18.07.2023
-- [Initialization of numerical optimization in R](files/yrw_07_09_2023.pdf), 12th YRW at Bielefeld University, 07.09.2023
-- [Advances in the initialization of probit model estimation and the {ino} R package](files/yrw_18_11_2022.pdf), 11th YRW at Bielefeld University, 18.11.2022
+- [Faster and more robust maximum likelihood estimation for random utility models](files/icmc_01_04_2024.pdf), ICMC in Puerto Varas, April 1, 2024
+- [Modeling unobserved choice behavior heterogeneity](files/yrw_16_02_2024.pdf), 13th YRW at Bielefeld University, February 16, 2024
+- [Facilitating probit likelihood optimization](files/statwo_12_09_2023.pdf), Statistische Woche in Dortmund, September 12, 2023
+- [Bayesian probit models for preference classification](files/IWSM2023-oelschlaeger-bauer-poster.pdf), IWSM in Dortmund, July 18, 2023
+- [Initialization of numerical optimization in R](files/yrw_07_09_2023.pdf), 12th YRW at Bielefeld University, September 7, 2023
+- [Advances in the initialization of probit model estimation and the {ino} R package](files/yrw_18_11_2022.pdf), 11th YRW at Bielefeld University, November 18, 2022
 :::
 
 ::: {.callout-note collapse="true" appearance="minimal"}
@@ -56,16 +56,64 @@ Several lectures and tutorials in statistics and math. See [here](https://ekvv.u
 ::: {.callout-note collapse="true" appearance="minimal"}
 ## Software
 
-- [ao](https://loelschlaeger.de/ao/): Alternating Optimization
-- [choicedata](https://loelschlaeger.de/choicedata/): Working with Choice Data
-- [fHMM](https://loelschlaeger.de/fHMM/): Fitting Hidden Markov Models to Financial Data
-- [ino](https://loelschlaeger.de/ino/): Initialization of Numerical Optimization
-- [normalize](https://CRAN.R-project.org/package=normalize): Centering and Scaling of Numeric Data
-- [oeli](https://loelschlaeger.de/oeli/): Some Utilities for Developing Data Science Software
-- [optimizeR](https://loelschlaeger.de/optimizeR/): Unified Framework for Numerical Optimizers
-- [portion](https://CRAN.R-project.org/package=portion): Extracting a Data Portion
-- [RprobitB](https://loelschlaeger.de/RprobitB/): Bayesian Probit Choice Modeling
-- [trackopt](https://loelschlaeger.de/trackopt/): Track Numerical Optimization
-- [vntrs](https://loelschlaeger.de/vntrs/): Variable Neighborhood Trust Region Search
+<table class="table software-table">
+<tbody>
+<tr>
+<td><a href="https://loelschlaeger.de/ao/">ao</a></td>
+<td>Alternating Optimization</td>
+<td><a href="https://CRAN.R-project.org/package=ao"><img src="https://www.r-pkg.org/badges/version/ao" alt="CRAN status for ao"></a></td>
+</tr>
+<tr>
+<td><a href="https://loelschlaeger.de/choicedata/">choicedata</a></td>
+<td>Working with Choice Data</td>
+<td><a href="https://CRAN.R-project.org/package=choicedata"><img src="https://www.r-pkg.org/badges/version/choicedata" alt="CRAN status for choicedata"></a></td>
+</tr>
+<tr>
+<td><a href="https://loelschlaeger.de/fHMM/">fHMM</a></td>
+<td>Fitting Hidden Markov Models to Financial Data</td>
+<td><a href="https://CRAN.R-project.org/package=fHMM"><img src="https://www.r-pkg.org/badges/version/fHMM" alt="CRAN status for fHMM"></a></td>
+</tr>
+<tr>
+<td><a href="https://loelschlaeger.de/ino/">ino</a></td>
+<td>Initialization of Numerical Optimization</td>
+<td><a href="https://CRAN.R-project.org/package=ino"><img src="https://www.r-pkg.org/badges/version/ino" alt="CRAN status for ino"></a></td>
+</tr>
+<tr>
+<td><a href="https://CRAN.R-project.org/package=normalize">normalize</a></td>
+<td>Centering and Scaling of Numeric Data</td>
+<td><a href="https://CRAN.R-project.org/package=normalize"><img src="https://www.r-pkg.org/badges/version/normalize" alt="CRAN status for normalize"></a></td>
+</tr>
+<tr>
+<td><a href="https://loelschlaeger.de/oeli/">oeli</a></td>
+<td>Some Utilities for Developing Data Science Software</td>
+<td><a href="https://CRAN.R-project.org/package=oeli"><img src="https://www.r-pkg.org/badges/version/oeli" alt="CRAN status for oeli"></a></td>
+</tr>
+<tr>
+<td><a href="https://loelschlaeger.de/optimizeR/">optimizeR</a></td>
+<td>Unified Framework for Numerical Optimizers</td>
+<td><a href="https://CRAN.R-project.org/package=optimizeR"><img src="https://www.r-pkg.org/badges/version/optimizeR" alt="CRAN status for optimizeR"></a></td>
+</tr>
+<tr>
+<td><a href="https://CRAN.R-project.org/package=portion">portion</a></td>
+<td>Extracting a Data Portion</td>
+<td><a href="https://CRAN.R-project.org/package=portion"><img src="https://www.r-pkg.org/badges/version/portion" alt="CRAN status for portion"></a></td>
+</tr>
+<tr>
+<td><a href="https://loelschlaeger.de/RprobitB/">RprobitB</a></td>
+<td>Bayesian Probit Choice Modeling</td>
+<td><a href="https://CRAN.R-project.org/package=RprobitB"><img src="https://www.r-pkg.org/badges/version/RprobitB" alt="CRAN status for RprobitB"></a></td>
+</tr>
+<tr>
+<td><a href="https://loelschlaeger.de/trackopt/">trackopt</a></td>
+<td>Track Numerical Optimization</td>
+<td><a href="https://CRAN.R-project.org/package=trackopt"><img src="https://www.r-pkg.org/badges/version/trackopt" alt="CRAN status for trackopt"></a></td>
+</tr>
+<tr>
+<td><a href="https://loelschlaeger.de/vntrs/">vntrs</a></td>
+<td>Variable Neighborhood Trust Region Search</td>
+<td><a href="https://CRAN.R-project.org/package=vntrs"><img src="https://www.r-pkg.org/badges/version/vntrs" alt="CRAN status for vntrs"></a></td>
+</tr>
+</tbody>
+</table>
 :::
 ::::::
