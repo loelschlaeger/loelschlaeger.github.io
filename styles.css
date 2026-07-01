@@ -23,13 +23,15 @@
 
 .quarto-about-trestles .about-image.profile-image-cycle {
   cursor: pointer;
+  height: 20em;
+  object-fit: cover;
+  object-position: center;
   transition:
     box-shadow 160ms ease,
     filter 160ms ease,
     transform 160ms ease;
 }
 
-.quarto-about-trestles .about-image.profile-image-cycle:hover,
 .quarto-about-trestles .about-image.profile-image-cycle:focus-visible {
   box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.28);
   filter: brightness(1.04);
@@ -58,7 +60,6 @@
     transition: none;
   }
 
-  .quarto-about-trestles .about-image.profile-image-cycle:hover,
   .quarto-about-trestles .about-image.profile-image-cycle:focus-visible {
     transform: none;
   }

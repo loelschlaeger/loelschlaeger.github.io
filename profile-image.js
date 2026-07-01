@@ -38,6 +38,11 @@
     showImage(image, nextIndex);
   }
 
+  function showPreviousImage(image) {
+    const previousIndex = (currentIndex(image) - 1 + images.length) % images.length;
+    showImage(image, previousIndex);
+  }
+
   function initProfileImageCycle() {
     const image = document.querySelector(selector);
     if (!image || image.dataset.profileImageCycle === "true") {
@@ -48,15 +53,27 @@
     image.classList.add("profile-image-cycle");
     image.tabIndex = 0;
     image.setAttribute("role", "button");
-    image.setAttribute("aria-label", "Click to switch profile image");
-    image.setAttribute("title", "Click to switch profile image");
+    image.setAttribute("aria-label", "Click the left half for the previous profile image or the right half for the next profile image");
+    image.setAttribute("title", "Left half: previous image, right half: next image");
 
-    image.addEventListener("click", function () {
+    image.addEventListener("click", function (event) {
+      const bounds = image.getBoundingClientRect();
+      if (event.clientX - bounds.left < bounds.width / 2) {
+        showPreviousImage(image);
+        return;
+      }
+
       showNextImage(image);
     });
 
     image.addEventListener("keydown", function (event) {
-      if (event.key !== "Enter" && event.key !== " ") {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        showPreviousImage(image);
+        return;
+      }
+
+      if (event.key !== "Enter" && event.key !== " " && event.key !== "ArrowRight") {
         return;
       }
 
