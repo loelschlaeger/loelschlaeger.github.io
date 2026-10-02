@@ -3,11 +3,13 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "!basics_in_statistics/"
   resources:
     - typewriter.js
     - profile-image.js
     - files/lennart_fliegen.jpeg
     - files/lennart_schach.jpeg
+    - basics_in_statistics/
 
 website:
   favicon: favicon-32x32.png

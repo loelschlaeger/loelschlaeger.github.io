@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Basics in Statistics &mdash; Scripts and slides</title>
+<style>
+  :root {
+    --green: #007556;
+    --blue: #46506e;
+    --grey: #7c8388;
+    --lightgrey: #f2f2f2;
+    --ink: #1d2226;
+    --page: #ffffff;
+    --line: #dfe3e6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding-block: 2.5rem 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: var(--page);
+    color: var(--ink);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 50rem; margin: 0 auto; }
+  header { border-bottom: 2px solid var(--green); padding-bottom: 1.25rem; margin-bottom: 2rem; }
+  h1 { margin: 0 0 .3rem; font-size: 1.6rem; line-height: 1.25; color: var(--blue); font-weight: 600; }
+  h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .09em; color: var(--grey); margin: 2.5rem 0 .9rem; font-weight: 600; }
+  ul.units { list-style: none; margin: 0; padding: 0; }
+  li.unit {
+    display: flex; flex-direction: column; gap: .7rem; align-items: flex-start;
+    border: 1px solid var(--line); border-radius: 6px; margin-bottom: .75rem;
+    padding: 1rem 1.15rem;
+  }
+  .unit-name { font-weight: 600; color: var(--blue); display: block; }
+  .links { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+  a.dl {
+    display: inline-block; text-align: center; text-decoration: none; white-space: nowrap;
+    background: var(--green); color: #fff; font-weight: 600; font-size: .92rem;
+    padding: .55rem 1.1rem; border-radius: 5px;
+  }
+  a.dl:hover, a.dl:focus-visible { background: #005c44; outline: none; }
+  a.dl.disabled {
+    background: #c9cfd3; color: #fff; cursor: default; pointer-events: none;
+  }
+  .pending {
+    display: inline-block; white-space: nowrap;
+    color: var(--grey); font-size: .9rem; font-style: italic;
+    padding: .55rem 0;
+  }
+  li.unit:not([data-state="pending"]) .pending { display: none; }
+  li.unit[data-state="pending"] .links { display: none; }
+
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line); color: var(--grey); font-size: .85rem; }
+  footer a { color: var(--green); }
+  @media (max-width: 30rem) {
+    li.unit { align-items: stretch; }
+    .links { flex-direction: column; align-items: stretch; }
+    a.dl { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Basics in Statistics &mdash; Scripts and slides</h1>
+  </header>
+
+  <h2>Monday, 5 October</h2>
+  <ul class="units">
+    <li class="unit" data-check="scripts/u1_statistical_thinking.R" data-solutions="solutions/u1_statistical_thinking.zip">
+      <span class="unit-name">1 &middot; Statistical Thinking</span>
+      <span class="links">
+        <a class="dl" href="slides/u1_statistical_thinking.pdf" download>Download slides</a>
+        <a class="dl" href="scripts/u1_statistical_thinking.R" download>Download R script</a>
+        <a class="dl disabled solutions" aria-disabled="true">Download solutions</a>
+      </span>
+      <span class="pending">available Monday morning</span>
+    </li>
+    <li class="unit" data-check="scripts/u2_standard_tools.R" data-solutions="solutions/u2_standard_tools.zip">
+      <span class="unit-name">2 &middot; Standard Tools</span>
+      <span class="links">
+        <a class="dl" href="slides/u2_standard_tools.pdf" download>Download slides</a>
+        <a class="dl" href="scripts/u2_standard_tools.R" download>Download R script</a>
+        <a class="dl disabled solutions" aria-disabled="true">Download solutions</a>
+      </span>
+      <span class="pending">available Monday afternoon</span>
+    </li>
+  </ul>
+
+  <h2>Tuesday, 6 October</h2>
+  <ul class="units">
+    <li class="unit" data-check="scripts/u3_regression_analysis.R" data-solutions="solutions/u3_regression_analysis.zip">
+      <span class="unit-name">3 &middot; Regression Analysis</span>
+      <span class="links">
+        <a class="dl" href="slides/u3_regression_analysis.pdf" download>Download slides</a>
+        <a class="dl" href="scripts/u3_regression_analysis.R" download>Download R script</a>
+        <a class="dl disabled solutions" aria-disabled="true">Download solutions</a>
+      </span>
+      <span class="pending">available Tuesday morning</span>
+    </li>
+    <li class="unit" data-check="scripts/u4_beyond_basics.R" data-solutions="solutions/u4_beyond_basics.zip">
+      <span class="unit-name">4 &middot; Looking Beyond the Basics</span>
+      <span class="links">
+        <a class="dl" href="slides/u4_beyond_basics.pdf" download>Download slides</a>
+        <a class="dl" href="scripts/u4_beyond_basics.R" download>Download R script</a>
+        <a class="dl" href="scripts/minimal_report.qmd" download>Download Quarto</a>
+        <a class="dl disabled solutions" aria-disabled="true">Download solutions</a>
+      </span>
+      <span class="pending">available Tuesday afternoon</span>
+    </li>
+  </ul>
+
+  <footer>
+    <p>Dr. Lennart Oelschl&auml;ger &middot; Bielefeld University &middot;
+    <a href="mailto:lennart.oelschlaeger@uni-bielefeld.de">lennart.oelschlaeger@uni-bielefeld.de</a></p>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  document.querySelectorAll('li.unit[data-check]').forEach(function (li) {
+    fetch(li.getAttribute('data-check'), { method: 'HEAD', cache: 'no-store' })
+      .then(function (res) {
+        li.setAttribute('data-state', res.ok ? 'ready' : 'pending');
+      })
+      .catch(function () {
+        li.setAttribute('data-state', 'ready');
+      });
+
+    var zip = li.getAttribute('data-solutions');
+    var button = li.querySelector('a.solutions');
+    if (!zip || !button) { return; }
+    fetch(zip, { method: 'HEAD', cache: 'no-store' })
+      .then(function (res) {
+        if (res.ok) {
+          button.setAttribute('href', zip);
+          button.setAttribute('download', '');
+          button.removeAttribute('aria-disabled');
+          button.classList.remove('disabled');
+        }
+      })
+      .catch(function () {});
+  });
+})();
+</script>
+</body>
+</html>
