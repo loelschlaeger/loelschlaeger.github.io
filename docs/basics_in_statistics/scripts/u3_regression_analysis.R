@@ -78,29 +78,6 @@ ggplot(d, aes(x = carat, y = price, colour = color)) +
 
 
 
-## Demo: Collinearity ----
-cor(d$carat, d$x)
-summary(lm(price ~ carat, data = d))$coefficients
-summary(lm(price ~ carat + x, data = d))$coefficients
-1 / (1 - cor(d$carat, d$x)^2)  # variance inflation factor
-
-# Task: Copy the last line of the demo and replace d$x by d$depth. Are carat
-# and depth collinear?
-
-
-
-
-## Demo: Significant but not important ----
-summary(lm(price ~ carat, data = diamonds))$sigma  # all 53 940 diamonds
-summary(lm(price ~ carat + depth, data = diamonds))
-
-# Task: Copy the demo and replace depth by table (width of the top face in
-# percent). Is the table width significant? Does sigma fall much below
-# 1549 USD?
-
-
-
-
 # 3.3 Diagnostics and prediction -----------------------------------------------
 
 ## Demo: Diagnostic plots ----
@@ -142,7 +119,7 @@ exp(predict(m_loglog, new, interval = "prediction"))
 
 
 
-# 3.4 Logistic regression and model choice -------------------------------------
+# 3.4 Logistic regression ------------------------------------------------------
 
 ## Demo: Logistic regression ----
 bw <- MASS::birthwt
@@ -164,18 +141,3 @@ predict(g1, data.frame(smoke = c("no", "yes"), lwt = 130), type = "response")
 # Task: Use predict() with g2 as in the demo, for a smoker of 120 pounds
 # without and with hypertension: data.frame(smoke = "yes", lwt = 120,
 # ht = c(0, 1)).
-
-
-
-
-## Demo: Comparing models ----
-m1 <- lm(log(price) ~ log(carat), data = d)
-m2 <- lm(log(price) ~ log(carat) + color, data = d)
-m3 <- lm(log(price) ~ log(carat) + color + clarity, data = d)
-m4 <- lm(log(price) ~ log(carat) + color + clarity + cut, data = d)
-AIC(m1, m2, m3, m4)
-anova(m3, m4)
-c(summary(m1)$sigma, summary(m2)$sigma, summary(m3)$sigma,
-  summary(m4)$sigma)
-c(summary(m1)$adj.r.squared, summary(m2)$adj.r.squared,
-  summary(m3)$adj.r.squared, summary(m4)$adj.r.squared)
