@@ -1,0 +1,125 @@
+---
+title: "Flipper length and body mass in three penguin species"
+subtitle: "A minimal reproducible report"
+author: "Your name"
+date: today
+format:
+  html:
+    toc: true
+    embed-resources: true
+    fig-width: 6
+    fig-height: 3.6
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+<!-- Basics in Statistics, Unit 4: Press "Render" in RStudio. -->
+
+```{r}
+#| label: setup
+# install.packages(c("palmerpenguins", "dplyr", "ggplot2", "broom", "knitr",
+#                    "rmarkdown"))
+library(palmerpenguins)
+library(dplyr)
+library(ggplot2)
+library(broom)
+library(knitr)
+```
+
+## Data
+
+The `penguins` data set records body measurements of adult foraging penguins
+near Palmer Station, Antarctica. We use flipper length and body mass and drop
+the rows in which one of them is missing, stating how many that is.
+
+```{r}
+#| label: data
+penguins_complete <- penguins |>
+  filter(!is.na(flipper_length_mm), !is.na(body_mass_g))
+
+n_all <- nrow(penguins)
+n_used <- nrow(penguins_complete)
+```
+
+Of the `r n_all` birds in the data set, `r n_used` have complete measurements
+and are used below; `r n_all - n_used` are dropped.
+
+```{r}
+#| label: tbl-summary
+#| tbl-cap: "Body mass and flipper length by species, for the birds used here."
+penguins_complete |>
+  group_by(Species = species) |>
+  summarise(
+    n = n(),
+    `Mean body mass (g)` = round(mean(body_mass_g)),
+    `SD body mass (g)` = round(sd(body_mass_g)),
+    `Mean flipper (mm)` = round(mean(flipper_length_mm), 1),
+    .groups = "drop"
+  ) |>
+  kable()
+```
+
+## A first look
+
+```{r}
+#| label: fig-scatter
+#| fig-cap: "Body mass against flipper length. Each point is one bird."
+ggplot(penguins_complete,
+       aes(flipper_length_mm, body_mass_g, shape = species, colour = species)) +
+  geom_point(alpha = 0.75, size = 1.8) +
+  labs(x = "Flipper length (mm)", y = "Body mass (g)") +
+  theme_minimal(base_size = 11) +
+  theme(legend.position = "bottom", legend.title = element_blank())
+```
+
+@fig-scatter shows a clear positive association, and it also shows that the
+three species sit in different places along both axes. A model that ignores
+species would therefore mix two things: How mass changes with flipper length
+within a species, and how the species differ.
+
+## Model
+
+We regress body mass on flipper length and species. The species coefficients are
+differences from the reference species, Adelie.
+
+```{r}
+#| label: model
+fit <- lm(body_mass_g ~ flipper_length_mm + species, data = penguins_complete)
+```
+
+```{r}
+#| label: tbl-coefs
+#| tbl-cap: "Estimated coefficients with 95% confidence intervals."
+tidy(fit, conf.int = TRUE) |>
+  mutate(across(where(is.numeric), \(x) signif(x, 3)),
+         p.value = format.pval(p.value, eps = 0.001)) |>
+  select(Term = term, Estimate = estimate, `Std. error` = std.error,
+         `CI lower` = conf.low, `CI upper` = conf.high, `p value` = p.value) |>
+  kable()
+```
+
+```{r}
+#| label: slope
+slope <- tidy(fit, conf.int = TRUE) |> filter(term == "flipper_length_mm")
+```
+
+Within a species, a flipper that is one millimetre longer goes with a body mass
+that is on average `r round(slope$estimate, 1)` g larger
+(95% CI `r round(slope$conf.low, 1)` to `r round(slope$conf.high, 1)` g).
+The model reproduces `r round(100 * summary(fit)$r.squared)`% of the variation in
+body mass.
+
+## What this report does not claim
+
+The birds were measured, not assigned to a flipper length. The estimate
+describes an association within these three species at this location; it is not
+an estimate of what would happen to a bird's mass if its flipper grew.
+
+## Reproducibility
+
+```{r}
+#| label: session
+sessionInfo()
+```
